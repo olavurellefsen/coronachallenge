@@ -7,8 +7,8 @@ import Header from '../main/Header'
 const RoutesContainer = () => {
   return (
     <Switch>
-      {/* <Route path="/" component={Header}/> */}
       <Route path="/stream" component={Streaming}/>
+      <Route path="/" component={Header}/>
     </Switch>
   )
 }
