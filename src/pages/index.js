@@ -8,6 +8,7 @@ import Themes from "../components/main/themes"
 import TargetGroup from "../components/main/targetgroup"
 import JuryCriteria from "../components/main/jury-criteria"
 import Prizes from "../components/main/prizes"
+import EventSchedule from "../components/main/eventschedule"
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <TargetGroup />
     <JuryCriteria />
     <Prizes />
+    <EventSchedule />
   </Layout>
 )
 
