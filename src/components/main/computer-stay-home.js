@@ -24,9 +24,9 @@ const ImageSection = () => (
 )
 
 const ImageSectionStyle = styled(BackgroundImage)`
-  width: 512px;
-  height: 457px;
-  max-width: 70vw;
+  width: 384px;
+  height: 343px;
+  max-width: 100%;
   top: 0;
 `
 
