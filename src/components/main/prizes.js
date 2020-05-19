@@ -5,9 +5,9 @@ const Prizes = () => (
   <PrizesContainer>
     <PrizesTitleStyle>PRIZES</PrizesTitleStyle>
     <PrizesDescriptionStyle>
-      HIE´s entrepreneurship support to the winning team with a Highlands and
-      Islands participant (up to 2 days of the most appropriate business
-      development support
+      HIE´s entrepreneurship support to the best team with a Highlands and
+      Islands participant: up to 2 days of the most appropriate business
+      development support.
     </PrizesDescriptionStyle>
     <PrizesButtonStyle>
       1st prize
