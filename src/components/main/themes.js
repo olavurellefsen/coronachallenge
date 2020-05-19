@@ -71,7 +71,6 @@ const Themes = () => (
 
 const ThemesContainer = styled.div`
   position: relative;
-  max-width: 1608px;
   margin: 40px 5vw;
   padding: 40px;
   background: #e8e8e8;
@@ -97,15 +96,16 @@ const ThemesDescriptionStyle = styled.div`
 
 const ThemesList = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 `
 
 const ThemeBox = styled.div`
   flex: 1;
-  min-width: 300px;
-  margin: 20px 10px;
+  position: relative;
   height: auto;
+  left: 0;
 `
 
 const ThemeTitle = styled.div`
@@ -114,14 +114,14 @@ const ThemeTitle = styled.div`
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  transform: translate(-10%, 0);
   margin-bottom: 20px;
 `
 
 const ThemeDescription = styled.div`
   position: relative;
   top: -30px;
-  left: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
   width: 80%;
   padding: 10px;
   font-size: 18px;
@@ -129,7 +129,6 @@ const ThemeDescription = styled.div`
   color: white;
   background: #006eb6;
   opacity: 0.9;
-  height: 600px;
 `
 
 export default Themes
