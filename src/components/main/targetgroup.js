@@ -8,7 +8,7 @@ const TargetGroup = () => (
     <WhoCanStyle>WHO CAN PARTICIPATE?</WhoCanStyle>
     <TargetGroupDescriptionStyle>
       We welcome all participants from Greenland, Iceland, Faroe Islands and
-      Coastal Norway (countries bordering the Atlantic Ocean). Especially young
+      Coastal Norway (counties bordering the Atlantic Ocean). Especially young
       people between 18 and 30 years of age are encouraged to join. All
       backgrounds are relevant - the main point about North Atlantic Corona
       Challenge is your idea !
