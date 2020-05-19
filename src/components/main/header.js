@@ -26,21 +26,22 @@ const HeaderContainer = styled.div`
 
 const ProjectTitleStyle = styled.div`
   position: absolute;
-  top: 376px;
+  top: 300px;
   left: 50%;
   transform: translate(-50%, 0);
   color: white;
   background: #006eb6;
-  font-size: 32px;
+  font-size: 28px;
   opacity: 0.9;
   padding: 16px 20px;
   text-transform: uppercase;
+  text-align: center;
 `
 
 const SocialMediaContainer = styled.div`
   display: flex;
   position: absolute;
-  top: 495px;
+  top: 510px;
   left: 50%;
   transform: translate(-50%, 0);
 `
@@ -53,11 +54,11 @@ const IconStyle = styled.a`
 const Tag1Style = styled.div`
   position: absolute;
   top: 96px;
-  right: 1%;
+  right: 5%;
   transform: rotate(20deg);
   color: white;
   background: #006eb6;
-  font-size: 30px;
+  font-size: 20px;
   opacity: 1;
   padding: 12px 26px;
   text-transform: uppercase;
@@ -66,11 +67,11 @@ const Tag1Style = styled.div`
 const Tag2Style = styled.div`
   position: absolute;
   top: 206px;
-  right: 1%;
+  right: 5%;
   transform: rotate(20deg);
   color: white;
   background: #ff0000;
-  font-size: 30px;
+  font-size: 20px;
   opacity: 1;
   padding: 12px 26px;
   text-transform: uppercase;
