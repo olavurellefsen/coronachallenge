@@ -47,6 +47,15 @@ module.exports = {
           include: /.svg/ 
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-167137444-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
   ],
 }
