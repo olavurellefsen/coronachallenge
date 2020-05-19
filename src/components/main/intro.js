@@ -16,16 +16,16 @@ const Intro = () => (
 
 const IntroContainer = styled.div`
   position: relative;
-  max-width: 1608;
+  max-width: 1608px;
   margin: 640px 5vw 20px 5vw;
 `
 
 const IntroTitleStyle = styled.div`
   color: #006eb6;
   font-size: 30px;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  max-width: 1016;
 `
 
 const IntroDescriptionStyle = styled.div`
