@@ -32,6 +32,7 @@ const ProjectTitleStyle = styled.div`
   color: white;
   background: #006eb6;
   font-size: 28px;
+  font-weight: 600;
   opacity: 0.9;
   padding: 16px 20px;
   text-transform: uppercase;
