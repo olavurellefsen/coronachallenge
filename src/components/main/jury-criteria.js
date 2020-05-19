@@ -19,9 +19,9 @@ const JuryCriteria = () => (
     <JuryCriteriaTitle2Style>Impact</JuryCriteriaTitle2Style>
     <JuryCriteriaDescriptionStyle>
       The project should make a real difference in the struggle to help local
-      communities and/or companies. It should make a significant positive change
-      for a large number of people or for businesses particularly affected by
-      the corona virus
+      communities and/or companies in the North Atlantic region. It should make
+      a significant positive change for a large number of people or for
+      businesses particularly affected by the corona virus
     </JuryCriteriaDescriptionStyle>
     <JuryCriteriaDescriptionStyle>
       The project should be demand-led and with a commercial potential
