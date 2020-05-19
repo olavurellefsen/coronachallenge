@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "north-atlantic-corona-challenge",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "North Atlantic Corona Challenge",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Olavur Ellefsen <oe@tokni.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.21.35",
