@@ -121,7 +121,7 @@ const ThemeTitle = styled.div`
 const ThemeDescription = styled.div`
   position: relative;
   top: -30px;
-  left: 10%;
+  left: 20%;
   width: 80%;
   padding: 10px;
   font-size: 18px;
