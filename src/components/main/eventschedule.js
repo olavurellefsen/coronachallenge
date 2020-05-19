@@ -79,15 +79,14 @@ const EventScheduleContainer = styled.div`
 `
 
 const EventScheduleTitleStyle = styled.div`
-  position: absolute;
-  top: 30px;
+  position: relative;
+  margin: -560px 0 0 0;
   left: 50%;
   transform: translate(-50%, 0);
   color: #006eb6;
   font-size: 32px;
   font-weight: 600;
   opacity: 1;
-  margin: 0;
   padding: 12px 0;
   text-transform: uppercase;
   text-align: center;
@@ -99,10 +98,10 @@ const SubtitleStyle = styled.span`
 `
 
 const AllDaysContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 150px;
+  margin: 0;
   width: 100%;
   flex-wrap: wrap;
 `
