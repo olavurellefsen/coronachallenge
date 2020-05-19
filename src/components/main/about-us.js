@@ -5,23 +5,39 @@ const AboutUs = () => (
   <AboutUsContainer>
     <AboutUsTitleStyle>About us</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      This event is a collaboration between Nordic Atlantic Cooperation (NORA)
-      and Highlands and Islands Enterprise (HIE)
+      This event is a collaboration between{" "}
+      <LinkStyle href="https://www.nora.fo">
+        North Atlantic Cooperation (NORA)
+      </LinkStyle>{" "}
+      and{" "}
+      <LinkStyle href="https://www.hie.co.uk/">
+        Highlands and Islands Enterprise (HIE)
+      </LinkStyle>
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Organisers</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      North Atlantic Cooperation (NORA) Highlands and Islands Enterprise (HIE)
+      <LinkStyle href="https://www.nora.fo">
+        North Atlantic Cooperation (NORA)
+      </LinkStyle>
+      <br />
+      <LinkStyle href="https://www.hie.co.uk/">
+        Highlands and Islands Enterprise (HIE)
+      </LinkStyle>
     </AboutUsDescriptionStyle>
-    <AboutUsTitleStyle>Partners</AboutUsTitleStyle>
-    <AboutUsDescriptionStyle>...</AboutUsDescriptionStyle>
-    <AboutUsTitleStyle>Webpage designed by</AboutUsTitleStyle>
-    <AboutUsDescriptionStyle>Tøkni</AboutUsDescriptionStyle>
+
+    <AboutUsTitleStyle>Web application and design by</AboutUsTitleStyle>
+    <AboutUsDescriptionStyle>
+      <LinkStyle href="https://www.tokni.com">Tøkni Faroe Islands</LinkStyle>
+    </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>The event is inspired by</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      Hack the Crisis Barents Hack the Crisis Norway Hack the Crisis Estonia
+      Hack the Crisis Barents - Hack the Crisis Norway - Hack the Crisis Estonia
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Thanks to our sponsors and partners</AboutUsTitleStyle>
-    <AboutUsDescriptionStyle>Klaksvík municipality</AboutUsDescriptionStyle>
+    <AboutUsDescriptionStyle>
+    <LinkStyle href="https://www.klaksvik.fo">Klaksvík municipality</LinkStyle> and the Support Fund for the Cooperation between
+      Torshavn, Reykjavik and Nuuk.
+    </AboutUsDescriptionStyle>
   </AboutUsContainer>
 )
 
@@ -48,6 +64,12 @@ const AboutUsDescriptionStyle = styled.div`
   text-align: center;
   margin: 10px 0 30px 0;
   padding: 10px;
+  line-height: 1.6;
+`
+
+const LinkStyle = styled.a`
+  color: white;
+  text-decoration: none;
 `
 
 export default AboutUs

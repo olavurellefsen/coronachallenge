@@ -12,7 +12,7 @@ const Signup = () => (
       Do you want to participate in this North Atlantic challenge? Sign up and
       join the fun!
     </SignupDescriptionStyle>
-    <SignupButtonStyle href="https://www.tokni.com">SIGN UP</SignupButtonStyle>
+    <SignupButtonStyle href="https://proposalpot.tokni.com/registration/4XsmuEnAtrJzJcc1P5gXHw">SIGN UP</SignupButtonStyle>
   </SignupContainer>
 )
 

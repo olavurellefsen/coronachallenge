@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `North Atlantic Corona Challenge`,
+    description: `A 48-hour online challenge to tackle the Covid-19 Crisis`,
+    author: `@tokni`,
   },
   plugins: [
     `styled-components`,
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/cc-512.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -47,6 +47,15 @@ module.exports = {
           include: /.svg/ 
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-167137444-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
   ],
 }

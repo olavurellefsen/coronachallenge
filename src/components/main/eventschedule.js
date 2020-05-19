@@ -52,19 +52,19 @@ const EventSchedule = () => (
       <DayContainer>
         <DayTitleStyle>SUNDAY 31 MAY</DayTitleStyle>
         <ScheduleItemStyle>
+          11:00 <LineStyle />
+          <br />
+          MENTORING CHECKPOINT
+        </ScheduleItemStyle>
+        <ScheduleItemStyle>
           15:00 <LineStyle />
           <br />
-          DEADLINE TO SUBMIT PROJECT RESULTS.
+          DEADLINE TO SUBMIT PROJECT RESULTS
         </ScheduleItemStyle>
         <ScheduleItemStyle>
-          17:00 <LineStyle />
+          17:00-18:00 <LineStyle />
           <br />
           FINAL WEBINAR
-        </ScheduleItemStyle>
-        <ScheduleItemStyle>
-          18:00 <LineStyle />
-          <br />
-          EVENT ENDS
         </ScheduleItemStyle>
       </DayContainer>
     </AllDaysContainer>
