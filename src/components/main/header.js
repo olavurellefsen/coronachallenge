@@ -1,14 +1,16 @@
 import React from "react"
 import Background from "./background"
 import styled from "styled-components"
+import FacebookIcon from "../../images/facebook.svg";
+import InstagramIcon from "../../images/instagram.svg";
 
 const Header = () => (
   <HeaderContainer>
     <Background />
     <ProjectTitleStyle>North Atlantic Corona Challenge 2020</ProjectTitleStyle>
     <SocialMediaContainer>
-      <a href="https://facebook.com/toknifo"><FacebookIconStyle src="/facebook.svg" alt="Facebook page" /></a>
-      <a href="https://instagram.com"><InstagramIconStyle src="/instagram.svg" alt="Instagram page" /></a>
+      <IconStyle href="https://facebook.com/toknifo"><FacebookIcon /></IconStyle>
+      <IconStyle href="https://instagram.com"><InstagramIcon /></IconStyle>
     </SocialMediaContainer>
     <Tag1Style>#NorthAtlantic</Tag1Style>
     <Tag2Style>#HackTheCrisis</Tag2Style>
@@ -36,23 +38,14 @@ const ProjectTitleStyle = styled.div`
 `
 
 const SocialMediaContainer = styled.div`
+  display: flex;
   position: absolute;
   top: 495px;
   left: 50%;
   transform: translate(-50%, 0);
 `
 
-const FacebookIconStyle = styled.img`
-  background: white;
-  border-radius: 17px;
-  width: 34px;
-  border: solid 2px white;
-  margin: 0 10px;
-`
-
-const InstagramIconStyle = styled.img`
-  background: #006eb6;
-  border-radius: 8px;
+const IconStyle = styled.a`
   width: 34px;
   margin: 0 10px;
 `
