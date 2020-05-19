@@ -6,6 +6,7 @@ import Intro from "../components/main/intro"
 import Signup from "../components/main/signup"
 import Themes from "../components/main/themes"
 import TargetGroup from "../components/main/targetgroup"
+import JuryCriteria from "../components/main/jury-criteria"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Signup />
     <Themes />
     <TargetGroup />
+    <JuryCriteria />
   </Layout>
 )
 
