@@ -9,8 +9,8 @@ const Header = () => (
     <Background />
     <ProjectTitleStyle>North Atlantic Corona Challenge 2020</ProjectTitleStyle>
     <SocialMediaContainer>
-      <IconStyle href="https://facebook.com/toknifo"><FacebookIcon /></IconStyle>
-      <IconStyle href="https://instagram.com"><InstagramIcon /></IconStyle>
+      <IconStyle href="https://facebook.com/northatlanticcoronachallenge"><FacebookIcon /></IconStyle>
+      <IconStyle href="https://www.instagram.com/northatlanticcoronachallenge/"><InstagramIcon /></IconStyle>
     </SocialMediaContainer>
     <Tag1Style>#NorthAtlantic</Tag1Style>
     <Tag2Style>#HackTheCrisis</Tag2Style>
