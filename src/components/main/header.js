@@ -10,7 +10,7 @@ const Header = () => (
     <ProjectTitleStyle>North Atlantic Corona Challenge 2020</ProjectTitleStyle>
     <SocialMediaContainer>
       <IconStyle href="https://www.facebook.com/coronachallenge"><FacebookIcon /></IconStyle>
-      <IconStyle href="https://www.instagram.com/northatlanticcoronachallenge/"><InstagramIcon /></IconStyle>
+      <IconStyle href="https://www.instagram.com/coronachallenge.fo/"><InstagramIcon /></IconStyle>
     </SocialMediaContainer>
     <Tag1Style>#NorthAtlantic</Tag1Style>
     <Tag2Style>#HackTheCrisis</Tag2Style>
