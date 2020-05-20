@@ -7,7 +7,7 @@ import Form from "../components/register/form"
 
 const Page = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Register" />
     <Header />
     <Intro />
     <Form />
