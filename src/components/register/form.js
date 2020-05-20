@@ -38,12 +38,25 @@ const Form = () => (
       <FieldStyle>
         <LabelStyle>Which themes are you interested in?</LabelStyle>
         <br />
-        <InputStyle type="text" name="themes" id="themes" />
+        <br />
+        <RadioButtonStyle type="radio" name="themes" id="savelives" value="savelives"/>
+        <RadioButtonLabelStyle for="savelives">SAVE LIVES</RadioButtonLabelStyle><br/><br/>
+        <RadioButtonStyle type="radio" name="themes" id="savecommunities" value="savecommunities"/>
+        <RadioButtonLabelStyle for="savecommunities">SAVE COMMUNITIES</RadioButtonLabelStyle><br/><br/>
+        <RadioButtonStyle type="radio" name="themes" id="savebusinesses" value="savebusinesses"/>
+        <RadioButtonLabelStyle for="savebusinesses">SAVE BUSINESSES</RadioButtonLabelStyle><br/><br/>
       </FieldStyle>
       <FieldStyle>
         <LabelStyle>Skills and experiences</LabelStyle>
         <br />
-        <InputStyle type="text" name="message" id="message" />
+        <br />
+        <br />
+        <RadioButtonStyle type="radio" name="skillsexperiences" id="projectmanagement" value="projectmanagement"/>
+        <RadioButtonLabelStyle for="projectmanagement">PROJECT MANAGEMENT</RadioButtonLabelStyle><br/><br/>
+        <RadioButtonStyle type="radio" name="skillsexperiences" id="health" value="health"/>
+        <RadioButtonLabelStyle for="health">HEALTH</RadioButtonLabelStyle><br/><br/>
+        <RadioButtonStyle type="radio" name="skillsexperiences" id="software" value="software"/>
+        <RadioButtonLabelStyle for="software">SOFTWARE</RadioButtonLabelStyle><br/><br/>
       </FieldStyle>
       <DescriptionContainerStyle>
         <DescriptionParagraphStyle>
@@ -94,6 +107,19 @@ const InputStyle = styled.input`
   height: 56px;
   width: 325px;
   padding: 10px;
+`
+
+const RadioButtonStyle = styled.input`
+  padding: 10px;
+`
+
+const RadioButtonLabelStyle = styled.label`
+  color: #006eb6;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
 `
 
 const DescriptionContainerStyle = styled.div`
