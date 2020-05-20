@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import NorthAtlantic from "./northatlantic"
 
 const Intro = () => (
   <IntroContainer>
@@ -9,6 +10,7 @@ const Intro = () => (
       <br />
       29-31 MAY 2020
     </IntroTitleStyle>
+    <NorthAtlantic />
     <IntroDescriptionStyle>
       The Coronavirus pandemic has changed our lives dramatically in just two
       months. Businesses, communities and our way of living is not like it used
@@ -31,6 +33,7 @@ const IntroTitleStyle = styled.div`
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 20px 0;
 `
 
 const IntroDescriptionStyle = styled.div`
