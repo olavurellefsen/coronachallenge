@@ -25,7 +25,7 @@ const AboutUs = () => (
       </LinkStyle>
     </AboutUsDescriptionStyle>
 
-    <AboutUsTitleStyle>Web application and design by</AboutUsTitleStyle>
+    <AboutUsTitleStyle>Programming and web design by</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
       <LinkStyle href="https://www.tokni.com">Tøkni Faroe Islands</LinkStyle>
     </AboutUsDescriptionStyle>
@@ -38,7 +38,7 @@ const AboutUs = () => (
       <LinkStyle href="https://www.klaksvik.fo">
         Klaksvík municipality
       </LinkStyle>{" "}
-      and the Support Fund for the Cooperation between Torshavn, Reykjavik and
+      and the Support Fund for the Cooperation between Tórshavn, Reykjavík and
       Nuuk.
     </AboutUsDescriptionStyle>
   </AboutUsContainer>
