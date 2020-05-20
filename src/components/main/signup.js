@@ -12,7 +12,6 @@ const Signup = () => (
       Do you want to participate in this North Atlantic challenge? Sign up and
       join the fun!
     </SignupDescriptionStyle>
-    <SignupButtonStyle href="/register">SIGN UP</SignupButtonStyle>
   </SignupContainer>
 )
 
@@ -40,24 +39,6 @@ const SignupDescriptionStyle = styled.div`
   font-size: 24px;
   text-align: center;
   margin-top: 48px;
-`
-
-const SignupButtonStyle = styled.a`
-  display: block;
-  position: relative;
-  margin: 40px 10px;
-  max-width: 400px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: white;
-  background: #006eb6;
-  font-size: 28px;
-  font-weight: 600;
-  text-decoration: none;
-  opacity: 1;
-  padding: 16px 20px;
-  text-transform: uppercase;
-  text-align: center;
 `
 
 export default Signup
