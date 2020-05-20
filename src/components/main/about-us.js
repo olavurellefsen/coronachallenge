@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import HiepLogo from "./hiep-logo"
+import DhcsLogo from "./dhcs-logo"
 
 const AboutUs = () => (
   <AboutUsContainer>
@@ -12,14 +14,14 @@ const AboutUs = () => (
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Organisers</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-        Nordic Atlantic Cooperation (NORA)
+      Nordic Atlantic Cooperation (NORA)
       <br />
-        Highlands and Islands Enterprise (HIE)
+      Highlands and Islands Enterprise (HIE)
     </AboutUsDescriptionStyle>
-
     <AboutUsTitleStyle>Programming and web design by</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      <LinkStyle href="https://www.tokni.com">Tøkni</LinkStyle> from the Faroe Islands
+      <LinkStyle href="https://www.tokni.com">Tøkni</LinkStyle> from the Faroe
+      Islands
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>The event is inspired by</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
@@ -27,12 +29,18 @@ const AboutUs = () => (
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Thanks to our sponsors and partners</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      <LinkStyle href="https://www.klaksvik.fo">
-        Klaksvík municipality
-      </LinkStyle>{" "}
-      and the Support Fund for the Cooperation between Tórshavn, Reykjavík and
-      Nuuk.
+      Klaksvík municipality (
+      <LinkStyle href="https://www.klaksvik.fo">klaksvik.fo</LinkStyle>)
     </AboutUsDescriptionStyle>
+    <AboutUsDescriptionStyle>
+      Support Fund for the Cooperation between Tórshavn, Reykjavík and Nuuk.
+    </AboutUsDescriptionStyle>
+    <AboutUsDescriptionStyle>
+      Highlands and Islands European Partnership (HIEP), Scottish Government´s
+      Digital Health and Care CivTech
+    </AboutUsDescriptionStyle>
+    <HiepLogo />
+    <DhcsLogo />
   </AboutUsContainer>
 )
 
