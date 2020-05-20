@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Intro = () => (
   <IntroContainer>
-    <SignupButtonStyle href="/register">SIGN UP</SignupButtonStyle>
+    <SignupButtonStyle href="/signup">SIGN UP</SignupButtonStyle>
     <IntroTitleStyle>
       A 48 HOUR ONLINE CHALLENGE TO TACKLE COVID-19 CRISIS
       <br />
