@@ -5,9 +5,29 @@ const Form = () => (
   <FormContainer>
     <form
       method="post"
-      action="#"
-      netlify-honeypot="bot-field"
-      data-netlify="true"
+      // action="http://localhost:9000/ReceiveRegistration"
+      onSubmit={(event) => {
+        console.log('A form was submitted: ', event.target.firstnames.value);
+        const user = {
+          name: `${event.target.firstnames.value} ${event.target.lastname.value}`,
+          age: event.target.age.value,
+          email: event.target.email.value,
+          country: event.target.country.value,
+          experiences: event.target.skillsexperiences.value,
+          themes: event.target.themes.value
+        }
+        fetch("http://localhost:9000/ReceiveRegistration", {
+          method: 'POST',
+          // We convert the React state to JSON and send it as the POST body
+          body: JSON.stringify(user),
+          mode: "no-cors"
+        }).then(function (response) {
+          console.log(response)
+          return response.json();
+        });
+
+        event.preventDefault();
+      }}
     >
       <input type="hidden" name="bot-field" />
       <FieldStyle>
@@ -229,7 +249,7 @@ const Form = () => (
           OTHER, PLEASE SPECIFY
         </CheckboxLabelStyle>
         <InputOtherStyle type="text" name="skillsexperiences_other" />
-        ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+
         <br />
         <br />
       </FieldStyle>
