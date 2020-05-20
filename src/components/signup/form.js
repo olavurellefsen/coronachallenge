@@ -11,6 +11,7 @@ const Form = () => (
     >
       <FieldContainer>
         <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="signup" />
         <FieldStyle>
           <LabelStyle>First Names</LabelStyle>
           <br />
@@ -273,7 +274,7 @@ const Form = () => (
             EU's General Data Protection Regulation (GDPR)
           </a>
         </DescriptionParagraphStyle>
-        <ButtonStyle type="submit">NOT READY YET - COME BACK SOON</ButtonStyle>
+        <ButtonStyle type="submit">SIGN UP FOR EVENT</ButtonStyle>
       </DescriptionContainerStyle>
     </form>
   </FormContainer>
