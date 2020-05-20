@@ -28,207 +28,218 @@ const Form = () => (
       <FieldStyle>
         <LabelStyle>Age</LabelStyle>
         <br />
-        <br />
-        <CheckboxStyle
-          type="radio"
-          name="age"
-          id="age1617"
-          value="age1617"
-          required
-        />
-        <CheckboxLabelStyle for="age1617">16-17 years</CheckboxLabelStyle>
-        <CheckboxStyle
-          type="radio"
-          name="age"
-          id="age1830"
-          value="age1830"
-          required
-        />
-        <CheckboxLabelStyle for="age1830">18-30 years</CheckboxLabelStyle>
-        <CheckboxStyle
-          type="radio"
-          name="age"
-          id="age3150"
-          value="age3150"
-          required
-        />
-        <CheckboxLabelStyle for="age3150">31-50 years</CheckboxLabelStyle>
-        <CheckboxStyle
-          type="radio"
-          name="age"
-          id="age51plus"
-          value="age51plus"
-          required
-        />
-        <CheckboxLabelStyle for="age51plus">51+ years</CheckboxLabelStyle>
-        <br />
-        <br />
+        <CheckboxGroupStyle>
+          <CheckboxStyle
+            type="radio"
+            name="age"
+            id="age1617"
+            value="age1617"
+            required
+          />
+          <CheckboxLabelStyle for="age1617">16-17 years</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="age"
+            id="age1830"
+            value="age1830"
+            required
+          />
+          <CheckboxLabelStyle for="age1830">18-30 years</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="age"
+            id="age3150"
+            value="age3150"
+            required
+          />
+          <CheckboxLabelStyle for="age3150">31-50 years</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="age"
+            id="age51plus"
+            value="age51plus"
+            required
+          />
+          <CheckboxLabelStyle for="age51plus">51+ years</CheckboxLabelStyle>
+          <br />
+        </CheckboxGroupStyle>
       </FieldStyle>
       <FieldStyle>
         <LabelStyle>Country</LabelStyle>
         <br />
-        <br />
-        <CheckboxStyle
-          type="radio"
-          name="country"
-          id="greenland"
-          value="greenland"
-          required
-        />
-        <CheckboxLabelStyle for="greenland">GREENLAND</CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="radio"
-          name="country"
-          id="iceland"
-          value="iceland"
-          required
-        />
-        <CheckboxLabelStyle for="iceland">ICELAND</CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="radio"
-          name="country"
-          id="faroeislands"
-          value="faroeislands"
-          required
-        />
-        <CheckboxLabelStyle for="faroeislands">
-          FAROE ISLANDS
-        </CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="radio"
-          name="country"
-          id="scotland"
-          value="scotland"
-          required
-        />
-        <CheckboxLabelStyle for="scotland">SCOTLAND</CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="radio"
-          name="country"
-          id="coastalnorway"
-          value="coastalnorway"
-          required
-        />
-        <CheckboxLabelStyle for="coastalnorway">
-          COASTAL NORWAY
-        </CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle type="radio" name="country" id="other" value="other" required />
-        <CheckboxLabelStyle for="other">OTHER</CheckboxLabelStyle>
-        <br />
-        <br />
+        <CheckboxGroupStyle>
+          <CheckboxStyle
+            type="radio"
+            name="country"
+            id="greenland"
+            value="greenland"
+            required
+          />
+          <CheckboxLabelStyle for="greenland">GREENLAND</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="country"
+            id="iceland"
+            value="iceland"
+            required
+          />
+          <CheckboxLabelStyle for="iceland">ICELAND</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="country"
+            id="faroeislands"
+            value="faroeislands"
+            required
+          />
+          <CheckboxLabelStyle for="faroeislands">
+            FAROE ISLANDS
+          </CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="country"
+            id="scotland"
+            value="scotland"
+            required
+          />
+          <CheckboxLabelStyle for="scotland">SCOTLAND</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="country"
+            id="coastalnorway"
+            value="coastalnorway"
+            required
+          />
+          <CheckboxLabelStyle for="coastalnorway">
+            COASTAL NORWAY
+          </CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="radio"
+            name="country"
+            id="other"
+            value="other"
+            required
+          />
+          <CheckboxLabelStyle for="other">OTHER</CheckboxLabelStyle>
+          <br />
+        </CheckboxGroupStyle>
       </FieldStyle>
       <FieldStyle>
-        <LabelStyle>Which themes are you interested in?</LabelStyle>
+        <LabelStyle>Which themes interest you?</LabelStyle>
         <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="themes"
-          id="savelives"
-          value="savelives"
-        />
-        <CheckboxLabelStyle for="savelives">SAVE LIVES</CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="themes"
-          id="savecommunities"
-          value="savecommunities"
-        />
-        <CheckboxLabelStyle for="savecommunities">
-          SAVE COMMUNITIES
-        </CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="themes"
-          id="savebusinesses"
-          value="savebusinesses"
-        />
-        <CheckboxLabelStyle for="savebusinesses">
-          SAVE BUSINESSES
-        </CheckboxLabelStyle>
-        <br />
-        <br />
+        <CheckboxGroupStyle>
+          <CheckboxStyle
+            type="checkbox"
+            name="themes"
+            id="savelives"
+            value="savelives"
+          />
+          <CheckboxLabelStyle for="savelives">SAVE LIVES</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="checkbox"
+            name="themes"
+            id="savecommunities"
+            value="savecommunities"
+          />
+          <CheckboxLabelStyle for="savecommunities">
+            SAVE COMMUNITIES
+          </CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="checkbox"
+            name="themes"
+            id="savebusinesses"
+            value="savebusinesses"
+          />
+          <CheckboxLabelStyle for="savebusinesses">
+            SAVE BUSINESSES
+          </CheckboxLabelStyle>
+          <br />
+        </CheckboxGroupStyle>
       </FieldStyle>
       <FieldStyle>
         <LabelStyle>Skills and experiences</LabelStyle>
         <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="skillsexperiences"
-          id="projectmanagement"
-          value="projectmanagement"
-        />
-        <CheckboxLabelStyle for="projectmanagement">
-          PROJECT MANAGEMENT
-        </CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="skillsexperiences"
-          id="health"
-          value="health"
-        />
-        <CheckboxLabelStyle for="health">HEALTH</CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="skillsexperiences"
-          id="software"
-          value="software"
-        />
-        <CheckboxLabelStyle for="software">SOFTWARE</CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="skillsexperiences"
-          id="hardware"
-          value="hardware"
-        />
-        <CheckboxLabelStyle for="hardware">HARDWARE</CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="skillsexperiences"
-          id="ideageneration"
-          value="ideageneration"
-        />
-        <CheckboxLabelStyle for="ideageneration">
-          IDEA GENERATION / CONCEPT DEVELOPMENT
-        </CheckboxLabelStyle>
-        <br />
-        <br />
-        <CheckboxStyle
-          type="checkbox"
-          name="skillsexperiences"
-          id="other"
-          value="other"
-        />
-        <CheckboxLabelStyle for="other">
-          OTHER, PLEASE SPECIFY
-        </CheckboxLabelStyle>
-        <InputOtherStyle type="text" name="skillsexperiences_other" />
-        ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-        <br />
-        <br />
+        <CheckboxGroupStyle>
+          <CheckboxStyle
+            type="checkbox"
+            name="skillsexperiences"
+            id="projectmanagement"
+            value="projectmanagement"
+          />
+          <CheckboxLabelStyle for="projectmanagement">
+            PROJECT MANAGEMENT
+          </CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="checkbox"
+            name="skillsexperiences"
+            id="health"
+            value="health"
+          />
+          <CheckboxLabelStyle for="health">HEALTH</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="checkbox"
+            name="skillsexperiences"
+            id="software"
+            value="software"
+          />
+          <CheckboxLabelStyle for="software">SOFTWARE</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="checkbox"
+            name="skillsexperiences"
+            id="hardware"
+            value="hardware"
+          />
+          <CheckboxLabelStyle for="hardware">HARDWARE</CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="checkbox"
+            name="skillsexperiences"
+            id="conceptdevelopment"
+            value="conceptdevelopment"
+          />
+          <CheckboxLabelStyle for="conceptdevelopment">
+            CONCEPT DEVELOPMENT
+          </CheckboxLabelStyle>
+          <br />
+          <br />
+          <CheckboxStyle
+            type="checkbox"
+            name="skillsexperiences"
+            id="other"
+            value="other"
+          />
+          <CheckboxLabelStyle for="other">
+            OTHER, PLEASE SPECIFY
+          </CheckboxLabelStyle>
+          <InputOtherStyle type="text" name="skillsexperiences_other" />
+          <br />
+        </CheckboxGroupStyle>
       </FieldStyle>
       <DescriptionContainerStyle>
         <DescriptionParagraphStyle>
@@ -239,8 +250,8 @@ const Form = () => (
           By submitting this form you agree to our Terms and Conditions.
         </DescriptionParagraphStyle>
         <DescriptionParagraphStyle>
-          All personal data will be treated in accordance with the{" "}
-          <a href="https://gdpr-info.eu/">
+          All personal data will be treated in accordance with the
+          {" "}<a href="https://gdpr-info.eu/"> 
             EU's General Data Protection Regulation (GDPR)
           </a>
         </DescriptionParagraphStyle>
@@ -266,7 +277,8 @@ const LabelStyle = styled.label`
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 2px;
+  padding: 0;
+  line-height: 2;
 `
 
 const InputStyle = styled.input`
@@ -277,8 +289,20 @@ const InputStyle = styled.input`
   margin: 0;
   border: 0;
   height: 56px;
-  width: 325px;
+  width: 600px;
+  max-width: 90vw;
   padding: 10px;
+`
+
+const CheckboxGroupStyle = styled.div`
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+  margin: 0;
+  border: 0;
+  height: 100%;
+  width: 600px;
+  max-width: 90vw;
 `
 
 const CheckboxStyle = styled.input`
@@ -301,7 +325,8 @@ const InputOtherStyle = styled.input`
   box-shadow: 0px 3px 6px #00000029;
   border: 0;
   height: 30px;
-  width: 325px;
+  width: 500px;
+  max-width: 80vw;
   padding: 10px;
 `
 
