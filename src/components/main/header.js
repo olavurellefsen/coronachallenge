@@ -13,7 +13,7 @@ const Header = () => (
       <IconStyle href="https://www.instagram.com/coronachallenge.fo/"><InstagramIcon /></IconStyle>
     </SocialMediaContainer>
     <Tag1Style>#NorthAtlantic</Tag1Style>
-    <Tag2Style>#HackTheCrisis</Tag2Style>
+    <Tag2Style>#CORONACHALLENGE</Tag2Style>
   </HeaderContainer>
 )
 
