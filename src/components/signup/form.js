@@ -26,7 +26,8 @@ const Form = () => (
           country: event.target.country.value,
           experiences: experiences,
           themes: themes,
-          requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c` // TODO: #38 find a better way to post request ID
+          requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c`, // TODO: #38 find a better way to post request ID,
+          need_help: event.target.needhelp.value,
         }
         fetch("http://localhost:9000/ReceiveRegistration", {
           method: 'POST',
