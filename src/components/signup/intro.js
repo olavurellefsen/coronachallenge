@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Intro = () => (
   <IntroContainer>
-    <IntroTitleStyle>REGISTER</IntroTitleStyle>
+    <IntroTitleStyle>SIGN UP</IntroTitleStyle>
   </IntroContainer>
 )
 
