@@ -7,15 +7,24 @@ const Form = () => (
       method="post"
       action="http://localhost:9000/ReceiveRegistration"
       onSubmit={(event) => {
-        console.log('A form was submitted: ', event.target.skillsexperiences.value);
-        console.log('A form was submitted: ', event.target.themes.value);
+        let experiences = ``
+        let themes = ``
+        event.target.skillsexperiences.forEach(element => {
+          experiences = element.checked ? experiences + element.value + " " : experiences
+
+        });
+        event.target.themes.forEach(element => {
+          experiences = element.checked ? experiences + element.value + " " : experiences
+
+        });
+
         const user = {
           name: `${event.target.firstnames.value} ${event.target.lastname.value}`,
           age: event.target.age.value,
           email: event.target.email.value,
           country: event.target.country.value,
-          experiences: event.target.skillsexperiences.value,
-          themes: event.target.themes.value,
+          experiences: experiences,
+          themes: themes,
           requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c` // TODO: #38 find a better way to post request ID
         }
         fetch("http://localhost:9000/ReceiveRegistration", {
