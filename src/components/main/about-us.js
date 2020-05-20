@@ -7,7 +7,7 @@ const AboutUs = () => (
     <AboutUsDescriptionStyle>
       This event is a collaboration between{" "}
       <LinkStyle href="https://www.nora.fo">
-        North Atlantic Cooperation (NORA)
+        Nordic Atlantic Cooperation (NORA)
       </LinkStyle>{" "}
       and{" "}
       <LinkStyle href="https://www.hie.co.uk/">
@@ -17,7 +17,7 @@ const AboutUs = () => (
     <AboutUsTitleStyle>Organisers</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
       <LinkStyle href="https://www.nora.fo">
-        North Atlantic Cooperation (NORA)
+        Nordic Atlantic Cooperation (NORA)
       </LinkStyle>
       <br />
       <LinkStyle href="https://www.hie.co.uk/">
@@ -35,8 +35,11 @@ const AboutUs = () => (
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Thanks to our sponsors and partners</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-    <LinkStyle href="https://www.klaksvik.fo">Klaksvík municipality</LinkStyle> and the Support Fund for the Cooperation between
-      Torshavn, Reykjavik and Nuuk.
+      <LinkStyle href="https://www.klaksvik.fo">
+        Klaksvík municipality
+      </LinkStyle>{" "}
+      and the Support Fund for the Cooperation between Torshavn, Reykjavik and
+      Nuuk.
     </AboutUsDescriptionStyle>
   </AboutUsContainer>
 )
