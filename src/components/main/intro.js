@@ -4,6 +4,10 @@ import NorthAtlantic from "./northatlantic"
 
 const Intro = () => (
   <IntroContainer>
+    <IntroDescriptionStyle>
+      Are you a young person living in the North Atlantic and have an idea that
+      can help our region, then we want to hear from you!
+    </IntroDescriptionStyle>
     <SignupButtonStyle href="/signup">SIGN UP</SignupButtonStyle>
     <IntroTitleStyle>
       A 48 HOUR ONLINE CHALLENGE TO TACKLE COVID-19 CRISIS
@@ -11,12 +15,25 @@ const Intro = () => (
       29-31 MAY 2020
     </IntroTitleStyle>
     <NorthAtlantic />
+    <IntroTitleStyle>
+      YOU CAN PARTICIPATE AND
+      <br />
+      WIN 30,000 DKK
+    </IntroTitleStyle>
     <IntroDescriptionStyle>
       The Coronavirus pandemic has changed our lives dramatically in just two
       months. Businesses, communities and our way of living is not like it used
       to be. In the North Atlantic Corona Challenge we challenge you to develop
       your best idea to save lives, businesses and communities in our North
       Atlantic region.
+    </IntroDescriptionStyle>
+    <IntroDescriptionStyle>
+      Organized by Nordic Atlantic Cooperation (NORA) and Highlands and Islands
+      Enterprise (HIE).
+    </IntroDescriptionStyle>
+    <IntroDescriptionStyle>
+      Do you want to participate in this North Atlantic challenge? Sign up and
+      join the fun!
     </IntroDescriptionStyle>
   </IntroContainer>
 )
@@ -33,7 +50,7 @@ const IntroTitleStyle = styled.div`
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: 20px 0;
 `
 
 const IntroDescriptionStyle = styled.div`
