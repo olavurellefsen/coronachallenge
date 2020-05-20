@@ -11,52 +11,227 @@ const Form = () => (
     >
       <input type="hidden" name="bot-field" />
       <FieldStyle>
-        <LabelStyle>First Name</LabelStyle>
+        <LabelStyle>First Names</LabelStyle>
         <br />
-        <InputStyle type="text" name="firstname" id="firstname" />
+        <InputStyle type="text" name="firstnames" id="firstnames" required />
       </FieldStyle>
       <FieldStyle>
-        <LabelStyle>Surname</LabelStyle>
+        <LabelStyle>Last Name</LabelStyle>
         <br />
-        <InputStyle type="text" name="surname" id="surname" />
-      </FieldStyle>
-      <FieldStyle>
-        <LabelStyle>Age</LabelStyle>
-        <br />
-        <InputStyle type="text" name="age" id="age" />
+        <InputStyle type="text" name="lastname" id="lastname" required />
       </FieldStyle>
       <FieldStyle>
         <LabelStyle>Email</LabelStyle>
         <br />
-        <InputStyle type="email" name="email" id="email" />
+        <InputStyle type="email" name="email" id="email" required />
+      </FieldStyle>
+      <FieldStyle>
+        <LabelStyle>Age</LabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="radio"
+          name="age"
+          id="age1617"
+          value="age1617"
+          required
+        />
+        <CheckboxLabelStyle for="age1617">16-17 years</CheckboxLabelStyle>
+        <CheckboxStyle
+          type="radio"
+          name="age"
+          id="age1830"
+          value="age1830"
+          required
+        />
+        <CheckboxLabelStyle for="age1830">18-30 years</CheckboxLabelStyle>
+        <CheckboxStyle
+          type="radio"
+          name="age"
+          id="age3150"
+          value="age3150"
+          required
+        />
+        <CheckboxLabelStyle for="age3150">31-50 years</CheckboxLabelStyle>
+        <CheckboxStyle
+          type="radio"
+          name="age"
+          id="age51plus"
+          value="age51plus"
+          required
+        />
+        <CheckboxLabelStyle for="age51plus">51+ years</CheckboxLabelStyle>
+        <br />
+        <br />
       </FieldStyle>
       <FieldStyle>
         <LabelStyle>Country</LabelStyle>
         <br />
-        <InputStyle type="text" name="country" id="country" />
+        <br />
+        <CheckboxStyle
+          type="radio"
+          name="country"
+          id="greenland"
+          value="greenland"
+          required
+        />
+        <CheckboxLabelStyle for="greenland">GREENLAND</CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="radio"
+          name="country"
+          id="iceland"
+          value="iceland"
+          required
+        />
+        <CheckboxLabelStyle for="iceland">ICELAND</CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="radio"
+          name="country"
+          id="faroeislands"
+          value="faroeislands"
+          required
+        />
+        <CheckboxLabelStyle for="faroeislands">
+          FAROE ISLANDS
+        </CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="radio"
+          name="country"
+          id="scotland"
+          value="scotland"
+          required
+        />
+        <CheckboxLabelStyle for="scotland">SCOTLAND</CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="radio"
+          name="country"
+          id="coastalnorway"
+          value="coastalnorway"
+          required
+        />
+        <CheckboxLabelStyle for="coastalnorway">
+          COASTAL NORWAY
+        </CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle type="radio" name="country" id="other" value="other" required />
+        <CheckboxLabelStyle for="other">OTHER</CheckboxLabelStyle>
+        <br />
+        <br />
       </FieldStyle>
       <FieldStyle>
         <LabelStyle>Which themes are you interested in?</LabelStyle>
         <br />
         <br />
-        <RadioButtonStyle type="radio" name="themes" id="savelives" value="savelives"/>
-        <RadioButtonLabelStyle for="savelives">SAVE LIVES</RadioButtonLabelStyle><br/><br/>
-        <RadioButtonStyle type="radio" name="themes" id="savecommunities" value="savecommunities"/>
-        <RadioButtonLabelStyle for="savecommunities">SAVE COMMUNITIES</RadioButtonLabelStyle><br/><br/>
-        <RadioButtonStyle type="radio" name="themes" id="savebusinesses" value="savebusinesses"/>
-        <RadioButtonLabelStyle for="savebusinesses">SAVE BUSINESSES</RadioButtonLabelStyle><br/><br/>
+        <CheckboxStyle
+          type="checkbox"
+          name="themes"
+          id="savelives"
+          value="savelives"
+          required
+        />
+        <CheckboxLabelStyle for="savelives">SAVE LIVES</CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="themes"
+          id="savecommunities"
+          value="savecommunities"
+          required
+        />
+        <CheckboxLabelStyle for="savecommunities">
+          SAVE COMMUNITIES
+        </CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="themes"
+          id="savebusinesses"
+          value="savebusinesses"
+          required
+        />
+        <CheckboxLabelStyle for="savebusinesses">
+          SAVE BUSINESSES
+        </CheckboxLabelStyle>
+        <br />
+        <br />
       </FieldStyle>
       <FieldStyle>
         <LabelStyle>Skills and experiences</LabelStyle>
         <br />
         <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="skillsexperiences"
+          id="projectmanagement"
+          value="projectmanagement"
+        />
+        <CheckboxLabelStyle for="projectmanagement">
+          PROJECT MANAGEMENT
+        </CheckboxLabelStyle>
         <br />
-        <RadioButtonStyle type="radio" name="skillsexperiences" id="projectmanagement" value="projectmanagement"/>
-        <RadioButtonLabelStyle for="projectmanagement">PROJECT MANAGEMENT</RadioButtonLabelStyle><br/><br/>
-        <RadioButtonStyle type="radio" name="skillsexperiences" id="health" value="health"/>
-        <RadioButtonLabelStyle for="health">HEALTH</RadioButtonLabelStyle><br/><br/>
-        <RadioButtonStyle type="radio" name="skillsexperiences" id="software" value="software"/>
-        <RadioButtonLabelStyle for="software">SOFTWARE</RadioButtonLabelStyle><br/><br/>
+        <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="skillsexperiences"
+          id="health"
+          value="health"
+        />
+        <CheckboxLabelStyle for="health">HEALTH</CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="skillsexperiences"
+          id="software"
+          value="software"
+        />
+        <CheckboxLabelStyle for="software">SOFTWARE</CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="skillsexperiences"
+          id="hardware"
+          value="hardware"
+        />
+        <CheckboxLabelStyle for="hardware">HARDWARE</CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="skillsexperiences"
+          id="ideageneration"
+          value="ideageneration"
+        />
+        <CheckboxLabelStyle for="ideageneration">
+          IDEA GENERATION / CONCEPT DEVELOPMENT
+        </CheckboxLabelStyle>
+        <br />
+        <br />
+        <CheckboxStyle
+          type="checkbox"
+          name="skillsexperiences"
+          id="other"
+          value="other"
+        />
+        <CheckboxLabelStyle for="other">
+          OTHER, PLEASE SPECIFY
+        </CheckboxLabelStyle>
+        <InputOtherStyle type="text" name="skillsexperiences_other" />
+        ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        <br />
+        <br />
       </FieldStyle>
       <DescriptionContainerStyle>
         <DescriptionParagraphStyle>
@@ -64,15 +239,15 @@ const Form = () => (
           purposes.
         </DescriptionParagraphStyle>
         <DescriptionParagraphStyle>
+          By submitting this form you agree to our Terms and Conditions.
+        </DescriptionParagraphStyle>
+        <DescriptionParagraphStyle>
           All personal data will be treated in accordance with the{" "}
           <a href="https://gdpr-info.eu/">
             EU's General Data Protection Regulation (GDPR)
           </a>
         </DescriptionParagraphStyle>
-        <ButtonStyle type="submit">Submit</ButtonStyle>
-        <DescriptionParagraphStyle>
-          By submitting this form you agree to our Terms and Conditions.
-        </DescriptionParagraphStyle>
+        <ButtonStyle type="submit">REGISTER FOR EVENT</ButtonStyle>
       </DescriptionContainerStyle>
     </form>
   </FormContainer>
@@ -109,17 +284,28 @@ const InputStyle = styled.input`
   padding: 10px;
 `
 
-const RadioButtonStyle = styled.input`
+const CheckboxStyle = styled.input`
   padding: 10px;
 `
 
-const RadioButtonLabelStyle = styled.label`
+const CheckboxLabelStyle = styled.label`
   color: #006eb6;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   padding: 20px;
+`
+
+const InputOtherStyle = styled.input`
+  color: black;
+  font-size: 24px;
+  text-align: left;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 0;
+  height: 30px;
+  width: 325px;
+  padding: 10px;
 `
 
 const DescriptionContainerStyle = styled.div`
@@ -136,10 +322,8 @@ const DescriptionParagraphStyle = styled.div`
 const ButtonStyle = styled.button`
   display: block;
   position: relative;
-  margin: 40px 10px;
+  margin: 40px 0px;
   max-width: 400px;
-  left: 50%;
-  transform: translate(-50%, 0);
   color: white;
   background: #006eb6;
   font-size: 28px;
@@ -149,6 +333,7 @@ const ButtonStyle = styled.button`
   padding: 16px 20px;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 `
 
 export default Form
