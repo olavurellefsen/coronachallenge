@@ -11,11 +11,11 @@ const Form = () => (
         let experiences = ``
         let themes = ``
         event.target.skillsexperiences.forEach(element => {
-          experiences = element.checked ? experiences + element.value + " " : experiences
+          experiences = element.checked ? experiences + element.value + ", " : experiences
 
         });
         event.target.themes.forEach(element => {
-          experiences = element.checked ? experiences + element.value + " " : experiences
+          themes = element.checked ? themes + element.value + ", " : themes
 
         });
 
