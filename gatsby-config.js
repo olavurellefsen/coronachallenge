@@ -28,7 +28,6 @@ module.exports = {
         icon: `src/images/cc-512.png`,
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
