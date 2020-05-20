@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Form = () => (
   <FormContainer>
     <form
+      name="signup"
       method="post"
       action="http://localhost:9000/ReceiveRegistration"
       onSubmit={(event) => {
@@ -303,7 +304,7 @@ const Form = () => (
             EU's General Data Protection Regulation (GDPR)
           </a>
         </DescriptionParagraphStyle>
-        <ButtonStyle type="submit">SIGN UP FOR EVENT</ButtonStyle>
+        <ButtonStyle type="submit">NOT READY YET - COME BACK SOON</ButtonStyle>
       </DescriptionContainerStyle>
     </form>
   </FormContainer>
