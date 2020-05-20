@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Form = () => (
   <FormContainer>
     <form
+      name="signup"
       method="post"
       netlify-honeypot="bot-field"
       data-netlify="true"
