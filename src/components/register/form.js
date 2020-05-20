@@ -136,7 +136,6 @@ const Form = () => (
           name="themes"
           id="savelives"
           value="savelives"
-          required
         />
         <CheckboxLabelStyle for="savelives">SAVE LIVES</CheckboxLabelStyle>
         <br />
@@ -146,7 +145,6 @@ const Form = () => (
           name="themes"
           id="savecommunities"
           value="savecommunities"
-          required
         />
         <CheckboxLabelStyle for="savecommunities">
           SAVE COMMUNITIES
@@ -158,7 +156,6 @@ const Form = () => (
           name="themes"
           id="savebusinesses"
           value="savebusinesses"
-          required
         />
         <CheckboxLabelStyle for="savebusinesses">
           SAVE BUSINESSES
