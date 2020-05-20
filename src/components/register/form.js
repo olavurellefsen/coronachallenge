@@ -67,7 +67,6 @@ const Form = () => (
 
 const FormContainer = styled.div`
   display: flex;
-  max-width: 1608px;
   padding: 0 5vw;
   background: #e8e8e8;
 `
