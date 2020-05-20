@@ -232,6 +232,32 @@ const Form = () => (
             <br />
           </CheckboxGroupStyle>
         </FieldStyle>
+        <FieldStyle>
+          <LabelStyle>
+            Do you want the organisers to help you find a team?
+          </LabelStyle>
+          <br />
+          <CheckboxGroupStyle>
+            <CheckboxStyle
+              type="radio"
+              name="needhelp"
+              id="yes"
+              value="yes"
+              required
+            />
+            <CheckboxLabelStyle for="yes">YES</CheckboxLabelStyle>
+            <br />
+            <br />
+            <CheckboxStyle
+              type="radio"
+              name="needhelp"
+              id="no"
+              value="no"
+              required
+            />
+            <CheckboxLabelStyle for="no">NO</CheckboxLabelStyle>
+          </CheckboxGroupStyle>
+        </FieldStyle>
       </FieldContainer>
       <DescriptionContainerStyle>
         <DescriptionParagraphStyle>
