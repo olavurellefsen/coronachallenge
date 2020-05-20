@@ -5,7 +5,6 @@ const Form = () => (
   <FormContainer>
     <form
       method="post"
-      action="#"
       netlify-honeypot="bot-field"
       data-netlify="true"
     >
@@ -273,7 +272,7 @@ const Form = () => (
             EU's General Data Protection Regulation (GDPR)
           </a>
         </DescriptionParagraphStyle>
-        <ButtonStyle type="submit">SIGN UP FOR EVENT</ButtonStyle>
+        <ButtonStyle type="submit">NOT READY YET - COME BACK SOON</ButtonStyle>
       </DescriptionContainerStyle>
     </form>
   </FormContainer>
