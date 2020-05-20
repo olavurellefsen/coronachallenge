@@ -38,7 +38,7 @@ const SignupDescriptionStyle = styled.div`
   color: black;
   font-size: 24px;
   text-align: center;
-  margin-top: 48px;
+  margin: 48px 0;
 `
 
 export default Signup

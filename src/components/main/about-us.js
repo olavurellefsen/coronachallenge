@@ -5,29 +5,21 @@ const AboutUs = () => (
   <AboutUsContainer>
     <AboutUsTitleStyle>About us</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      This event is a collaboration between{" "}
-      <LinkStyle href="https://www.nora.fo">
-        Nordic Atlantic Cooperation (NORA)
-      </LinkStyle>{" "}
-      and{" "}
-      <LinkStyle href="https://www.hie.co.uk/">
-        Highlands and Islands Enterprise (HIE)
-      </LinkStyle>
+      This event is a collaboration between Nordic Atlantic Cooperation (
+      <LinkStyle href="https://www.nora.fo">NORA</LinkStyle>) and Highlands and
+      Islands Enterprise ({" "}
+      <LinkStyle href="https://www.hie.co.uk/">HIE</LinkStyle>)
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Organisers</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      <LinkStyle href="https://www.nora.fo">
         Nordic Atlantic Cooperation (NORA)
-      </LinkStyle>
       <br />
-      <LinkStyle href="https://www.hie.co.uk/">
         Highlands and Islands Enterprise (HIE)
-      </LinkStyle>
     </AboutUsDescriptionStyle>
 
-    <AboutUsTitleStyle>Web application and design by</AboutUsTitleStyle>
+    <AboutUsTitleStyle>Programming and web design by</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      <LinkStyle href="https://www.tokni.com">Tøkni Faroe Islands</LinkStyle>
+      <LinkStyle href="https://www.tokni.com">Tøkni</LinkStyle> from the Faroe Islands
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>The event is inspired by</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
@@ -38,7 +30,7 @@ const AboutUs = () => (
       <LinkStyle href="https://www.klaksvik.fo">
         Klaksvík municipality
       </LinkStyle>{" "}
-      and the Support Fund for the Cooperation between Torshavn, Reykjavik and
+      and the Support Fund for the Cooperation between Tórshavn, Reykjavík and
       Nuuk.
     </AboutUsDescriptionStyle>
   </AboutUsContainer>
@@ -72,7 +64,6 @@ const AboutUsDescriptionStyle = styled.div`
 
 const LinkStyle = styled.a`
   color: white;
-  text-decoration: none;
 `
 
 export default AboutUs

@@ -48,7 +48,7 @@ const TargetGroupDescriptionStyle = styled.div`
   color: black;
   background: white;
   opacity: 0.78;
-  font-size: px;
+  font-size: 18px;
   text-align: center;
 `
 
