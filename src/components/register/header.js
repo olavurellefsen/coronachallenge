@@ -3,13 +3,13 @@ import Background from "./background"
 import styled from "styled-components"
 
 const Header = () => (
-  <HeaderContainer>
+  <HeaderContainer href="/">
     <Background />
-    <Tag1Style>#PARTICIPANTS</Tag1Style>
+    <Tag1Style>#CORONACHALLENGE</Tag1Style>
   </HeaderContainer>
 )
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.a`
   position: absolute;
   top: 0;
   left: 0;
