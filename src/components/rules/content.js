@@ -32,7 +32,37 @@ const Content = () => (
       collection at 18:00 (UTC time zone) and ends on Sunday with a final
       webinar at 17:00-18:00 where the winners are announced.
     </DescriptionStyle>
-    <ParagraphHeaderStyle>Event Schedule (UTC time zone)</ParagraphHeaderStyle>
+    <ParagraphHeaderStyle>Event Schedule (UTC time zone = Icelandic time)</ParagraphHeaderStyle>
+    <ListItemStyle>
+      Friday 29 May 2020
+      <br />
+      18:00 Idea collection
+      <br />
+      20:00 Kick-off webinar
+      <br />
+      20:30 Teams announced. Work starts.
+      <br />
+    </ListItemStyle>
+    <ListItemStyle>
+      Saturday 30 May 2020
+      <br />
+      12:00 Mentoring starts
+      <br />
+      17:00 Mentoring checkpoint
+      <br />
+      18:00 Preliminary submission deadline
+      <br />
+    </ListItemStyle>
+    <ListItemStyle>
+      Sunday 31 May 2020
+      <br />
+      11:00 Mentoring checkpoint
+      <br />
+      15:00 Deadline to submit project results
+      <br />
+      17:00-18:00 Final webinar
+      <br />
+    </ListItemStyle>
     <SectionHeaderStyle>Who can participate?</SectionHeaderStyle>
     <DescriptionStyle>
       We welcome all participants living in or coming from Greenland, Iceland,
@@ -50,11 +80,12 @@ const Content = () => (
       participants.
     </DescriptionStyle>
     <SectionHeaderStyle>What are the challenges?</SectionHeaderStyle>
-    <DescriptionStyle>There are three overarching themes:
-    Save Lives, Save Businesses, Save Communities. Under each, a number of
-    challenges are suggested below, but we want to generate other ideas as well
-    in response to the challenges our regions are facing. So creativity is very
-    much encouraged!</DescriptionStyle>
+    <DescriptionStyle>
+      There are three overarching themes: Save Lives, Save Businesses, Save
+      Communities. Under each, a number of challenges are suggested below, but
+      we want to generate other ideas as well in response to the challenges our
+      regions are facing. So creativity is very much encouraged!
+    </DescriptionStyle>
     <ParagraphHeaderStyle>SAVE LIVES</ParagraphHeaderStyle>
     <DescriptionStyle>
       Coronavirus is a threat not only to our physical health – especially for
@@ -159,7 +190,7 @@ const Content = () => (
       businesses particularly affected by the corona virus.
     </DescriptionStyle>
     <DescriptionStyle>
-      <br/>
+      <br />
       In addition, the project should be demand-led and with a commercial
       potential.
     </DescriptionStyle>
@@ -230,7 +261,7 @@ const DescriptionStyle = styled.div`
 
 const ListItemStyle = styled.li`
   font-size: 18px;
-  margin-left: 20px
+  margin-left: 20px;
 `
 
 export default Content
