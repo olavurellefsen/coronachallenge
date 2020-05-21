@@ -11,6 +11,10 @@ const AboutUs = () => (
       <LinkStyle href="https://www.nora.fo">NORA</LinkStyle>) and Highlands and
       Islands Enterprise ({" "}
       <LinkStyle href="https://www.hie.co.uk/">HIE</LinkStyle>)
+      <br/><br/>
+      <LinkStyle href="/privacypolicy">Privacy Policy</LinkStyle>
+      <br/>
+      <LinkStyle href="/rules">Rules and Code of Conduct</LinkStyle>
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Organisers</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>

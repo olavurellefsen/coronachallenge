@@ -266,7 +266,7 @@ const Form = () => (
           purposes.
         </DescriptionParagraphStyle>
         <DescriptionParagraphStyle>
-          By submitting this form you agree to our <a href="/privacypolicy">Terms and Conditions</a>.
+          By submitting this form you agree to our <a href="/privacypolicy">Privacy Policy</a> and our <a href="/rules">Rules and Code of Conduct</a>.
         </DescriptionParagraphStyle>
         <DescriptionParagraphStyle>
           All personal data will be treated in accordance with the{" "}
