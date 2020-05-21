@@ -60,6 +60,7 @@ const Tag1Style = styled.div`
   color: white;
   background: #006eb6;
   font-size: 20px;
+  font-weight: 600;
   opacity: 1;
   padding: 12px 26px;
   text-transform: uppercase;
@@ -73,6 +74,7 @@ const Tag2Style = styled.div`
   color: white;
   background: #ff0000;
   font-size: 20px;
+  font-weight: 600;
   opacity: 1;
   padding: 12px 26px;
   text-transform: uppercase;

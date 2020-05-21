@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Header from "../components/signup/header"
 import Intro from "../components/signup/intro"
 import Form from "../components/signup/form"
+import AboutUs from "../components/footer/about-us"
 
 const Page = () => (
   <Layout>
@@ -11,6 +12,7 @@ const Page = () => (
     <Header />
     <Intro />
     <Form />
+    <AboutUs />
   </Layout>
 )
 
