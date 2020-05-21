@@ -34,7 +34,7 @@ module.exports = {
         fonts: [
           {
             family: `Montserrat`,
-            variants: [`400`, `600`]
+            variants: [`400`, `600`],
           },
         ],
       },
@@ -43,9 +43,9 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /.svg/ 
-        }
-      }
+          include: /.svg/,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -56,5 +56,12 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ["https://www.google-analytics.com"],
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
