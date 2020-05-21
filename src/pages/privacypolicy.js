@@ -6,7 +6,7 @@ import Content from "../components/privacypolicy/content"
 
 const Page = () => (
   <Layout>
-    <SEO title="Sign up" />
+    <SEO title="Privacy Policy" />
     <Header />
     <Content />
   </Layout>
