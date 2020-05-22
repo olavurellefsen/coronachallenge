@@ -10,10 +10,16 @@ import JuryCriteria from "../components/main/jury-criteria"
 import Prizes from "../components/main/prizes"
 import EventSchedule from "../components/main/eventschedule"
 import AboutUs from "../components/footer/about-us"
+import Image from "../images/girl-smartphone-beach-dark.jpg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      title="Home"
+      description="Main page for the North Atlantic Corona Challenge"
+      image={Image}
+      pathname="/"
+    />
     <Header />
     <Intro />
     <Themes />
