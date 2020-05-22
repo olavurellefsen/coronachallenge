@@ -11,7 +11,7 @@ const TargetGroup = () => (
       Scotland and Coastal Norway (counties bordering the Atlantic Ocean).
       Especially young people between 18 and 30 years of age are encouraged to
       join. All backgrounds are relevant - the main point about North Atlantic
-      Corona Challenge is your idea !
+      Corona Challenge is your idea!
     </TargetGroupDescriptionStyle>
   </TargetGroupContainer>
 )
@@ -48,7 +48,7 @@ const TargetGroupDescriptionStyle = styled.div`
   color: black;
   background: white;
   opacity: 0.78;
-  font-size: px;
+  font-size: 18px;
   text-align: center;
 `
 

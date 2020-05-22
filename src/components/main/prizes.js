@@ -4,11 +4,6 @@ import styled from "styled-components"
 const Prizes = () => (
   <PrizesContainer>
     <PrizesTitleStyle>PRIZES</PrizesTitleStyle>
-    <PrizesDescriptionStyle>
-      HIE´s entrepreneurship support to the best team with a Highlands and
-      Islands participant: up to 2 days of the most appropriate business
-      development support.
-    </PrizesDescriptionStyle>
     <PrizesButtonStyle>
       1st prize
       <LineStyle />
@@ -27,6 +22,12 @@ const Prizes = () => (
       <br />
       10,000 DKK
     </PrizesButtonStyle>
+    <PrizesTitleStyle>ADDITIONAL PRIZE</PrizesTitleStyle>
+    <PrizesDescriptionStyle>
+      Highlands and Islands Enterprise´s (HIE) entrepreneurship support to the winning team with a Highlands and
+      Islands participant (up to 2 days of the most appropriate business
+      development support)
+    </PrizesDescriptionStyle>
   </PrizesContainer>
 )
 
@@ -52,7 +53,7 @@ const PrizesDescriptionStyle = styled.div`
   color: black;
   font-size: 24px;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 10px;
 `
 
 const PrizesButtonStyle = styled.div`
@@ -72,7 +73,7 @@ const PrizesButtonStyle = styled.div`
 `
 
 const LineStyle = styled.hr`
-  border-top: 1px solid rgb(255,255,255,0.5);
+  border-top: 1px solid rgb(255, 255, 255, 0.5);
   margin: 5px;
 `
 
