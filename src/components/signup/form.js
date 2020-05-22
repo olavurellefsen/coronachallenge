@@ -91,7 +91,7 @@ const Form = () => {
                 value="age1617"
                 required
               />
-              <CheckboxLabelStyle for="age1617">16-17 years</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="age1617">16-17 years</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -101,7 +101,7 @@ const Form = () => {
                 value="age1830"
                 required
               />
-              <CheckboxLabelStyle for="age1830">18-30 years</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="age1830">18-30 years</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -111,7 +111,7 @@ const Form = () => {
                 value="age31plus"
                 required
               />
-              <CheckboxLabelStyle for="age31plus">31+ years</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="age31plus">31+ years</CheckboxLabelStyle>
               <br />
             </CheckboxGroupStyle>
           </FieldStyle>
@@ -126,7 +126,7 @@ const Form = () => {
                 value="greenland"
                 required
               />
-              <CheckboxLabelStyle for="greenland">GREENLAND</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="greenland">GREENLAND</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -136,7 +136,7 @@ const Form = () => {
                 value="iceland"
                 required
               />
-              <CheckboxLabelStyle for="iceland">ICELAND</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="iceland">ICELAND</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -146,7 +146,7 @@ const Form = () => {
                 value="faroeislands"
                 required
               />
-              <CheckboxLabelStyle for="faroeislands">
+              <CheckboxLabelStyle htmlFor="faroeislands">
                 FAROE ISLANDS
             </CheckboxLabelStyle>
               <br />
@@ -158,7 +158,7 @@ const Form = () => {
                 value="scotland"
                 required
               />
-              <CheckboxLabelStyle for="scotland">SCOTLAND</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="scotland">SCOTLAND</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -168,7 +168,7 @@ const Form = () => {
                 value="coastalnorway"
                 required
               />
-              <CheckboxLabelStyle for="coastalnorway">
+              <CheckboxLabelStyle htmlFor="coastalnorway">
                 COASTAL NORWAY
             </CheckboxLabelStyle>
               <br />
@@ -180,7 +180,7 @@ const Form = () => {
                 value="other"
                 required
               />
-              <CheckboxLabelStyle for="other">OTHER</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="other">OTHER</CheckboxLabelStyle>
               <br />
             </CheckboxGroupStyle>
           </FieldStyle>
@@ -194,7 +194,7 @@ const Form = () => {
                 id="savelives"
                 value="savelives"
               />
-              <CheckboxLabelStyle for="savelives">SAVE LIVES</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="savelives">SAVE LIVES</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -203,7 +203,7 @@ const Form = () => {
                 id="savecommunities"
                 value="savecommunities"
               />
-              <CheckboxLabelStyle for="savecommunities">
+              <CheckboxLabelStyle htmlFor="savecommunities">
                 SAVE COMMUNITIES
             </CheckboxLabelStyle>
               <br />
@@ -214,7 +214,7 @@ const Form = () => {
                 id="savebusinesses"
                 value="savebusinesses"
               />
-              <CheckboxLabelStyle for="savebusinesses">
+              <CheckboxLabelStyle htmlFor="savebusinesses">
                 SAVE BUSINESSES
             </CheckboxLabelStyle>
               <br />
@@ -230,7 +230,7 @@ const Form = () => {
                 id="projectmanagement"
                 value="projectmanagement"
               />
-              <CheckboxLabelStyle for="projectmanagement">
+              <CheckboxLabelStyle htmlFor="projectmanagement">
                 PROJECT MANAGEMENT
             </CheckboxLabelStyle>
               <br />
@@ -241,7 +241,7 @@ const Form = () => {
                 id="health"
                 value="health"
               />
-              <CheckboxLabelStyle for="health">HEALTH</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="health">HEALTH</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -250,7 +250,7 @@ const Form = () => {
                 id="software"
                 value="software"
               />
-              <CheckboxLabelStyle for="software">SOFTWARE</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="software">SOFTWARE</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -259,7 +259,7 @@ const Form = () => {
                 id="hardware"
                 value="hardware"
               />
-              <CheckboxLabelStyle for="hardware">HARDWARE</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="hardware">HARDWARE</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -268,7 +268,7 @@ const Form = () => {
                 id="conceptdevelopment"
                 value="conceptdevelopment"
               />
-              <CheckboxLabelStyle for="conceptdevelopment">
+              <CheckboxLabelStyle htmlFor="conceptdevelopment">
                 CONCEPT DEVELOPMENT
             </CheckboxLabelStyle>
               <br />
@@ -279,7 +279,7 @@ const Form = () => {
                 id="other"
                 value="other"
               />
-              <CheckboxLabelStyle for="other">
+              <CheckboxLabelStyle htmlFor="other">
                 OTHER, PLEASE SPECIFY
             </CheckboxLabelStyle>
               <InputOtherStyle type="text" name="skillsexperiences_other" />
@@ -299,7 +299,7 @@ const Form = () => {
                 value="yes"
                 required
               />
-              <CheckboxLabelStyle for="yes">YES</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="yes">YES</CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -309,7 +309,7 @@ const Form = () => {
                 value="no"
                 required
               />
-              <CheckboxLabelStyle for="no">NO</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="no">NO</CheckboxLabelStyle>
             </CheckboxGroupStyle>
           </FieldStyle>
         </FieldContainer>
@@ -319,7 +319,7 @@ const Form = () => {
             purposes.
         </DescriptionParagraphStyle>
           <DescriptionParagraphStyle>
-            By submitting this form you agree to our Terms and Conditions.
+            By submitting this form you agree to our <a href="/privacypolicy">Privacy Policy</a> and our <a href="/rules">Rules and Code of Conduct</a>.
         </DescriptionParagraphStyle>
           <DescriptionParagraphStyle>
             All personal data will be treated in accordance with the{" "}
@@ -333,6 +333,7 @@ const Form = () => {
     </FormContainer>
   )
 }
+
 const FormContainer = styled.div`
   display: flex;
   padding: 0 5vw;
