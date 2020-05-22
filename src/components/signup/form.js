@@ -10,7 +10,7 @@ const Form = () => {
       <form
         name="signup"
         method="post"
-        action="http://localhost:9000/ReceiveRegistration"
+        action={process.env.GATSBY_X_REGISTER_URL}
         onSubmit={(event) => {
           let experiences = ``
           let themes = ``
@@ -28,7 +28,7 @@ const Form = () => {
             ageGroup: event.target.age.value,
             email: event.target.email.value,
             country: event.target.country.value,
-            experiences: experiences,
+            experiences: experiences + event.target.skillsexperiences_other.value,
             themes: themes,
             requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c`, // TODO: #38 find a better way to post request ID,
             need_help: event.target.needhelp.value,
