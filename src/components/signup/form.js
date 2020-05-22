@@ -1,317 +1,338 @@
 import React from "react"
 import styled from "styled-components"
+import short from "short-uuid"
+import SendEmail from "../utils/SendEmail"
 
-const Form = () => (
-  <FormContainer>
-    <form
-      name="signup"
-      method="post"
-      action="http://localhost:9000/ReceiveRegistration"
-      onSubmit={(event) => {
-        let experiences = ``
-        let themes = ``
-        event.target.skillsexperiences.forEach(element => {
-          experiences = element.checked ? experiences + element.value + ", " : experiences
+const Form = () => {
+  const translator = short()
+  return (
+    <FormContainer>
+      <form
+        name="signup"
+        method="post"
+        action="http://localhost:9000/ReceiveRegistration"
+        onSubmit={(event) => {
+          let experiences = ``
+          let themes = ``
+          event.target.skillsexperiences.forEach(element => {
+            experiences = element.checked ? experiences + element.value + ", " : experiences
 
-        });
-        event.target.themes.forEach(element => {
-          themes = element.checked ? themes + element.value + ", " : themes
+          });
+          event.target.themes.forEach(element => {
+            themes = element.checked ? themes + element.value + ", " : themes
 
-        });
+          });
 
-        const user = {
-          name: `${event.target.firstnames.value} ${event.target.lastname.value}`,
-          age: event.target.age.value,
-          email: event.target.email.value,
-          country: event.target.country.value,
-          experiences: experiences,
-          themes: themes,
-          requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c`, // TODO: #38 find a better way to post request ID,
-          need_help: event.target.needhelp.value,
-        }
-        fetch("http://localhost:9000/ReceiveRegistration", {
-          method: 'POST',
-          body: JSON.stringify(user),
-          mode: "cors"
-        }).then(function (response) {
-          console.log(response)
-          return response.json();
-        });
+          const user = {
+            name: `${event.target.firstnames.value} ${event.target.lastname.value}`,
+            ageGroup: event.target.age.value,
+            email: event.target.email.value,
+            country: event.target.country.value,
+            experiences: experiences,
+            themes: themes,
+            requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c`, // TODO: #38 find a better way to post request ID,
+            need_help: event.target.needhelp.value,
+          }
+          fetch(`${process.env.GATSBY_X_REGISTER_URL}`, { // "http://localhost:9000/ReceiveRegistration"
+            method: 'POST',
+            body: JSON.stringify(user),
+            mode: "cors"
+          }).then((response) => response.json())
+            .then((responseData) => {
+              if (responseData.variables.email) alert("Your email is already registered")
+              else if (responseData.variables.user_id) {
+                const requestId = translator.fromUUID(responseData.variables.request_id)
+                const userId = translator.fromUUID(responseData.variables.user_id)
 
-        event.preventDefault();
-      }}
-    >
-      <FieldContainer>
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="signup" />
-        <FieldStyle>
-          <LabelStyle>First Names</LabelStyle>
-          <br />
-          <InputStyle type="text" name="firstnames" id="firstnames" required />
-        </FieldStyle>
-        <FieldStyle>
-          <LabelStyle>Last Name</LabelStyle>
-          <br />
-          <InputStyle type="text" name="lastname" id="lastname" required />
-        </FieldStyle>
-        <FieldStyle>
-          <LabelStyle>Email</LabelStyle>
-          <br />
-          <InputStyle type="email" name="email" id="email" required />
-        </FieldStyle>
-        <FieldStyle>
-          <LabelStyle>Age</LabelStyle>
-          <br />
-          <CheckboxGroupStyle>
-            <CheckboxStyle
-              type="radio"
-              name="age"
-              id="age1617"
-              value="age1617"
-              required
-            />
-            <CheckboxLabelStyle for="age1617">16-17 years</CheckboxLabelStyle>
+                SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
+                  to: `${user.email}`,
+                  subject: `Registration to North Atlantic Corona Challenge`,
+                  html: `<p>Dear ${user.name}.</p></br>
+                  <p>Thank you for registering to the North Atlantic Corona Challenge!</p></br>
+                    <p> Please click on the following <a href="${
+                    process.env.GATSBY_X_CONFIRM_URL
+                    }/${requestId}/${userId}">link</a> to finish your sign up, and to be redirected to the right workspace. It's important that you use this email to login with - you won't able to access the event otherwise.</p>
+                `,
+                })
+                window.location.href = `/registered`
+              }
+            })
+            .catch(error => console.warn(error));
+
+          event.preventDefault();
+        }}
+      >
+        <FieldContainer>
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="signup" />
+          <FieldStyle>
+            <LabelStyle>First Names</LabelStyle>
             <br />
+            <InputStyle type="text" name="firstnames" id="firstnames" required />
+          </FieldStyle>
+          <FieldStyle>
+            <LabelStyle>Last Name</LabelStyle>
             <br />
-            <CheckboxStyle
-              type="radio"
-              name="age"
-              id="age1830"
-              value="age1830"
-              required
-            />
-            <CheckboxLabelStyle for="age1830">18-30 years</CheckboxLabelStyle>
+            <InputStyle type="text" name="lastname" id="lastname" required />
+          </FieldStyle>
+          <FieldStyle>
+            <LabelStyle>Email</LabelStyle>
             <br />
+            <InputStyle type="email" name="email" id="email" required />
+          </FieldStyle>
+          <FieldStyle>
+            <LabelStyle>Age</LabelStyle>
             <br />
-            <CheckboxStyle
-              type="radio"
-              name="age"
-              id="age31plus"
-              value="age31plus"
-              required
-            />
-            <CheckboxLabelStyle for="age31plus">31+ years</CheckboxLabelStyle>
+            <CheckboxGroupStyle>
+              <CheckboxStyle
+                type="radio"
+                name="age"
+                id="age1617"
+                value="age1617"
+                required
+              />
+              <CheckboxLabelStyle for="age1617">16-17 years</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="age"
+                id="age1830"
+                value="age1830"
+                required
+              />
+              <CheckboxLabelStyle for="age1830">18-30 years</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="age"
+                id="age31plus"
+                value="age31plus"
+                required
+              />
+              <CheckboxLabelStyle for="age31plus">31+ years</CheckboxLabelStyle>
+              <br />
+            </CheckboxGroupStyle>
+          </FieldStyle>
+          <FieldStyle>
+            <LabelStyle>Country</LabelStyle>
             <br />
-          </CheckboxGroupStyle>
-        </FieldStyle>
-        <FieldStyle>
-          <LabelStyle>Country</LabelStyle>
-          <br />
-          <CheckboxGroupStyle>
-            <CheckboxStyle
-              type="radio"
-              name="country"
-              id="greenland"
-              value="greenland"
-              required
-            />
-            <CheckboxLabelStyle for="greenland">GREENLAND</CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="radio"
-              name="country"
-              id="iceland"
-              value="iceland"
-              required
-            />
-            <CheckboxLabelStyle for="iceland">ICELAND</CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="radio"
-              name="country"
-              id="faroeislands"
-              value="faroeislands"
-              required
-            />
-            <CheckboxLabelStyle for="faroeislands">
-              FAROE ISLANDS
+            <CheckboxGroupStyle>
+              <CheckboxStyle
+                type="radio"
+                name="country"
+                id="greenland"
+                value="greenland"
+                required
+              />
+              <CheckboxLabelStyle for="greenland">GREENLAND</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="country"
+                id="iceland"
+                value="iceland"
+                required
+              />
+              <CheckboxLabelStyle for="iceland">ICELAND</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="country"
+                id="faroeislands"
+                value="faroeislands"
+                required
+              />
+              <CheckboxLabelStyle for="faroeislands">
+                FAROE ISLANDS
             </CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="radio"
-              name="country"
-              id="scotland"
-              value="scotland"
-              required
-            />
-            <CheckboxLabelStyle for="scotland">SCOTLAND</CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="radio"
-              name="country"
-              id="coastalnorway"
-              value="coastalnorway"
-              required
-            />
-            <CheckboxLabelStyle for="coastalnorway">
-              COASTAL NORWAY
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="country"
+                id="scotland"
+                value="scotland"
+                required
+              />
+              <CheckboxLabelStyle for="scotland">SCOTLAND</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="country"
+                id="coastalnorway"
+                value="coastalnorway"
+                required
+              />
+              <CheckboxLabelStyle for="coastalnorway">
+                COASTAL NORWAY
             </CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="country"
+                id="other"
+                value="other"
+                required
+              />
+              <CheckboxLabelStyle for="other">OTHER</CheckboxLabelStyle>
+              <br />
+            </CheckboxGroupStyle>
+          </FieldStyle>
+          <FieldStyle>
+            <LabelStyle>Which themes interest you?</LabelStyle>
             <br />
-            <br />
-            <CheckboxStyle
-              type="radio"
-              name="country"
-              id="other"
-              value="other"
-              required
-            />
-            <CheckboxLabelStyle for="other">OTHER</CheckboxLabelStyle>
-            <br />
-          </CheckboxGroupStyle>
-        </FieldStyle>
-        <FieldStyle>
-          <LabelStyle>Which themes interest you?</LabelStyle>
-          <br />
-          <CheckboxGroupStyle>
-            <CheckboxStyle
-              type="checkbox"
-              name="themes"
-              id="savelives"
-              value="savelives"
-            />
-            <CheckboxLabelStyle for="savelives">SAVE LIVES</CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="checkbox"
-              name="themes"
-              id="savecommunities"
-              value="savecommunities"
-            />
-            <CheckboxLabelStyle for="savecommunities">
-              SAVE COMMUNITIES
+            <CheckboxGroupStyle>
+              <CheckboxStyle
+                type="checkbox"
+                name="themes"
+                id="savelives"
+                value="savelives"
+              />
+              <CheckboxLabelStyle for="savelives">SAVE LIVES</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="checkbox"
+                name="themes"
+                id="savecommunities"
+                value="savecommunities"
+              />
+              <CheckboxLabelStyle for="savecommunities">
+                SAVE COMMUNITIES
             </CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="checkbox"
-              name="themes"
-              id="savebusinesses"
-              value="savebusinesses"
-            />
-            <CheckboxLabelStyle for="savebusinesses">
-              SAVE BUSINESSES
+              <br />
+              <br />
+              <CheckboxStyle
+                type="checkbox"
+                name="themes"
+                id="savebusinesses"
+                value="savebusinesses"
+              />
+              <CheckboxLabelStyle for="savebusinesses">
+                SAVE BUSINESSES
             </CheckboxLabelStyle>
+              <br />
+            </CheckboxGroupStyle>
+          </FieldStyle>
+          <FieldStyle>
+            <LabelStyle>Skills and experiences</LabelStyle>
             <br />
-          </CheckboxGroupStyle>
-        </FieldStyle>
-        <FieldStyle>
-          <LabelStyle>Skills and experiences</LabelStyle>
-          <br />
-          <CheckboxGroupStyle>
-            <CheckboxStyle
-              type="checkbox"
-              name="skillsexperiences"
-              id="projectmanagement"
-              value="projectmanagement"
-            />
-            <CheckboxLabelStyle for="projectmanagement">
-              PROJECT MANAGEMENT
+            <CheckboxGroupStyle>
+              <CheckboxStyle
+                type="checkbox"
+                name="skillsexperiences"
+                id="projectmanagement"
+                value="projectmanagement"
+              />
+              <CheckboxLabelStyle for="projectmanagement">
+                PROJECT MANAGEMENT
             </CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="checkbox"
-              name="skillsexperiences"
-              id="health"
-              value="health"
-            />
-            <CheckboxLabelStyle for="health">HEALTH</CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="checkbox"
-              name="skillsexperiences"
-              id="software"
-              value="software"
-            />
-            <CheckboxLabelStyle for="software">SOFTWARE</CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="checkbox"
-              name="skillsexperiences"
-              id="hardware"
-              value="hardware"
-            />
-            <CheckboxLabelStyle for="hardware">HARDWARE</CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="checkbox"
-              name="skillsexperiences"
-              id="conceptdevelopment"
-              value="conceptdevelopment"
-            />
-            <CheckboxLabelStyle for="conceptdevelopment">
-              CONCEPT DEVELOPMENT
+              <br />
+              <br />
+              <CheckboxStyle
+                type="checkbox"
+                name="skillsexperiences"
+                id="health"
+                value="health"
+              />
+              <CheckboxLabelStyle for="health">HEALTH</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="checkbox"
+                name="skillsexperiences"
+                id="software"
+                value="software"
+              />
+              <CheckboxLabelStyle for="software">SOFTWARE</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="checkbox"
+                name="skillsexperiences"
+                id="hardware"
+                value="hardware"
+              />
+              <CheckboxLabelStyle for="hardware">HARDWARE</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="checkbox"
+                name="skillsexperiences"
+                id="conceptdevelopment"
+                value="conceptdevelopment"
+              />
+              <CheckboxLabelStyle for="conceptdevelopment">
+                CONCEPT DEVELOPMENT
             </CheckboxLabelStyle>
-            <br />
-            <br />
-            <CheckboxStyle
-              type="checkbox"
-              name="skillsexperiences"
-              id="other"
-              value="other"
-            />
-            <CheckboxLabelStyle for="other">
-              OTHER, PLEASE SPECIFY
+              <br />
+              <br />
+              <CheckboxStyle
+                type="checkbox"
+                name="skillsexperiences"
+                id="other"
+                value="other"
+              />
+              <CheckboxLabelStyle for="other">
+                OTHER, PLEASE SPECIFY
             </CheckboxLabelStyle>
-            <InputOtherStyle type="text" name="skillsexperiences_other" />
-            <br />
-          </CheckboxGroupStyle>
-        </FieldStyle>
-        <FieldStyle>
-          <LabelStyle>
-            Do you want the organisers to help you find a team?
+              <InputOtherStyle type="text" name="skillsexperiences_other" />
+              <br />
+            </CheckboxGroupStyle>
+          </FieldStyle>
+          <FieldStyle>
+            <LabelStyle>
+              Do you want the organisers to help you find a team?
           </LabelStyle>
-          <br />
-          <CheckboxGroupStyle>
-            <CheckboxStyle
-              type="radio"
-              name="needhelp"
-              id="yes"
-              value="yes"
-              required
-            />
-            <CheckboxLabelStyle for="yes">YES</CheckboxLabelStyle>
             <br />
-            <br />
-            <CheckboxStyle
-              type="radio"
-              name="needhelp"
-              id="no"
-              value="no"
-              required
-            />
-            <CheckboxLabelStyle for="no">NO</CheckboxLabelStyle>
-          </CheckboxGroupStyle>
-        </FieldStyle>
-      </FieldContainer>
-      <DescriptionContainerStyle>
-        <DescriptionParagraphStyle>
-          The organizers are free to use the submitted videos for marketing
-          purposes.
+            <CheckboxGroupStyle>
+              <CheckboxStyle
+                type="radio"
+                name="needhelp"
+                id="yes"
+                value="yes"
+                required
+              />
+              <CheckboxLabelStyle for="yes">YES</CheckboxLabelStyle>
+              <br />
+              <br />
+              <CheckboxStyle
+                type="radio"
+                name="needhelp"
+                id="no"
+                value="no"
+                required
+              />
+              <CheckboxLabelStyle for="no">NO</CheckboxLabelStyle>
+            </CheckboxGroupStyle>
+          </FieldStyle>
+        </FieldContainer>
+        <DescriptionContainerStyle>
+          <DescriptionParagraphStyle>
+            The organizers are free to use the submitted videos for marketing
+            purposes.
         </DescriptionParagraphStyle>
-        <DescriptionParagraphStyle>
-          By submitting this form you agree to our Terms and Conditions.
+          <DescriptionParagraphStyle>
+            By submitting this form you agree to our Terms and Conditions.
         </DescriptionParagraphStyle>
-        <DescriptionParagraphStyle>
-          All personal data will be treated in accordance with the{" "}
-          <a href="https://gdpr-info.eu/">
-            EU's General Data Protection Regulation (GDPR)
+          <DescriptionParagraphStyle>
+            All personal data will be treated in accordance with the{" "}
+            <a href="https://gdpr-info.eu/">
+              EU's General Data Protection Regulation (GDPR)
           </a>
-        </DescriptionParagraphStyle>
-        <ButtonStyle type="submit">SIGN UP FOR EVENT</ButtonStyle>
-      </DescriptionContainerStyle>
-    </form>
-  </FormContainer>
-)
-
+          </DescriptionParagraphStyle>
+          <ButtonStyle type="submit">SIGN UP FOR EVENT</ButtonStyle>
+        </DescriptionContainerStyle>
+      </form>
+    </FormContainer>
+  )
+}
 const FormContainer = styled.div`
   display: flex;
   padding: 0 5vw;
