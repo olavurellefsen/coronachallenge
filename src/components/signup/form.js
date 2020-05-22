@@ -262,7 +262,7 @@ const Form = () => (
       </FieldContainer>
       <DescriptionContainerStyle>
         <DescriptionParagraphStyle>
-          The organizers are free to use the submitted videos for marketing
+          The organisers are free to use the submitted videos for marketing
           purposes.
         </DescriptionParagraphStyle>
         <DescriptionParagraphStyle>
