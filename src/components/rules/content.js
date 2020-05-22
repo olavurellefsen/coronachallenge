@@ -74,7 +74,7 @@ const Content = () => (
     </DescriptionStyle>
     <SectionHeaderStyle>How are teams formed?</SectionHeaderStyle>
     <DescriptionStyle>
-      The teams will be formed by the organizers to ensure a good mix of
+      The teams will be formed by the organisers to ensure a good mix of
       backgrounds and skills. We would like as many transnational teams as
       possible, to enable good knowledge exchange. A team can consist of up to 5
       participants.
@@ -202,14 +202,14 @@ const Content = () => (
     <SectionHeaderStyle>Code of conduct</SectionHeaderStyle>
     <DescriptionStyle>
       All participants are required to treat others (such as other participants,
-      mentors, judges and organizers) with respect throughout the whole event.
+      mentors, judges and organisers) with respect throughout the whole event.
       You are expected to behave professionally at all times. No harassment or
       inappropriate comments or behaviors will be tolerated and may result in
       disqualification.
     </DescriptionStyle>
     <SectionHeaderStyle>Photo Release Waiver</SectionHeaderStyle>
     <DescriptionStyle>
-      By participating in the NACC, you hereby grant the organizers permission
+      By participating in the NACC, you hereby grant the organisers permission
       to use the photographs, video, or other digital media created throughout
       the event for marketing purposes.
     </DescriptionStyle>
