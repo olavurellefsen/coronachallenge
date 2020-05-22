@@ -4,12 +4,18 @@ import YouTube from "react-youtube"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Image from "../images/girl-smartphone-beach-dark-1200x630.png"
 
 const SecondPage = props => {
   console.log(process.env.GATSBY_X_VIDEO_ID)
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO
+      title="Streaming"
+      description="Streaming"
+      image={{ src: Image, width: 1200, height: 630 }}
+      pathname="/stream"
+    />
       <h1>Streaming</h1>
       <ContainerStyle>
         <YouTube
