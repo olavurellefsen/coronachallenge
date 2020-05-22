@@ -9,6 +9,12 @@ import AboutUs from "../components/footer/about-us"
 const Page = () => (
   <Layout>
     <SEO title="Video" />
+    <SEO
+      title="Home"
+      description="Main page for the North Atlantic Corona Challenge"
+      image={{ src: Image, width: 1200, height: 630 }}
+      pathname="/"
+    />
     <Header />
     <Video />
     <Intro />
