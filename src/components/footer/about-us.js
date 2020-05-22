@@ -7,13 +7,15 @@ const AboutUs = () => (
   <AboutUsContainer>
     <AboutUsTitleStyle>About us</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
-      This event is a collaboration between Nordic Atlantic Cooperation (
+      The North Atlantic Corona Challenge event is a collaboration between
+      Nordic Atlantic Cooperation (
       <LinkStyle href="https://www.nora.fo">NORA</LinkStyle>) and Highlands and
       Islands Enterprise ({" "}
       <LinkStyle href="https://www.hie.co.uk/">HIE</LinkStyle>)
-      <br/><br/>
+      <br />
+      <br />
       <LinkStyle href="/privacypolicy">Privacy Policy</LinkStyle>
-      <br/>
+      <br />
       <LinkStyle href="/rules">Rules and Code of Conduct</LinkStyle>
     </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>Organisers</AboutUsTitleStyle>

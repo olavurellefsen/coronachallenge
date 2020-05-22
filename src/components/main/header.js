@@ -26,7 +26,7 @@ const HeaderContainer = styled.div`
 
 const ProjectTitleStyle = styled.div`
   position: absolute;
-  top: 300px;
+  top: 100px;
   left: 50%;
   transform: translate(-50%, 0);
   color: white;
@@ -54,7 +54,7 @@ const IconStyle = styled.a`
 
 const Tag1Style = styled.div`
   position: absolute;
-  top: 96px;
+  top: 350px;
   right: 5%;
   transform: rotate(20deg);
   color: white;
@@ -68,7 +68,7 @@ const Tag1Style = styled.div`
 
 const Tag2Style = styled.div`
   position: absolute;
-  top: 206px;
+  top: 450px;
   right: 5%;
   transform: rotate(20deg);
   color: white;
