@@ -4,7 +4,7 @@ import YouTube from "react-youtube"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../images/girl-smartphone-beach-dark-1200x630.png"
+import Image from "../images/girl-smartphone-beach-dark-1200x630.jpg"
 
 const SecondPage = props => {
   console.log(process.env.GATSBY_X_VIDEO_ID)
@@ -12,7 +12,6 @@ const SecondPage = props => {
     <Layout>
       <SEO
       title="Streaming"
-      description="Streaming"
       image={{ src: Image, width: 1200, height: 630 }}
       pathname="/stream"
     />
