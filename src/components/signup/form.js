@@ -435,14 +435,14 @@ const CheckboxLabelStyle = styled.label`
 
 const InputOtherStyle = styled.input`
   color: black;
-  font-size: 24px;
+  font-size: 16px;
   text-align: left;
   box-shadow: 0px 3px 6px #00000029;
   border: 0;
   height: 30px;
   width: 500px;
   max-width: 80vw;
-  padding: 10px;
+  padding: 0 10px;
   margin: 10px 0 0 0;
 `
 
