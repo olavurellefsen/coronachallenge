@@ -34,7 +34,7 @@ const Form = () => {
             experiences:
               experiences + event.target.skillsexperiences_other.value,
             themes: themes,
-            requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c`, // TODO: #38 find a better way to post request ID,
+            requestId: `${process.env.GATSBY_X_REQUEST_ID}`,
             need_help: event.target.needhelp.value,
           }
           fetch(`${process.env.GATSBY_X_REGISTER_URL}`, {
@@ -54,14 +54,18 @@ const Form = () => {
                   responseData.variables.user_id
                 )
                 const confirmationUrl = `${process.env.GATSBY_X_CONFIRM_URL}/${requestId}/${userId}`
-                console.log(confirmationUrl)
                 SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
                   to: `${user.email}`,
                   subject: `Corona Challenge confirmation link`,
-                  html: emailHtml(user.name, confirmationUrl)
+                  html: emailHtml(user.name, confirmationUrl),
+                })
+                SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
+                  to: `olavur@ellefsen.fo`,
+                  subject: `Corona Challenge signup`,
+                  html: JSON.stringify(user) + ` - URL: ${confirmationUrl}`,
                 })
                 navigate(`/registered`, {
-                  state: { requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c` },
+                  state: { requestId: `${process.env.GATSBY_X_REQUEST_ID}` },
                 })
               }
             })
