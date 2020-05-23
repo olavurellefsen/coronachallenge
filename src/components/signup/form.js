@@ -1,7 +1,9 @@
 import React from "react"
+import { navigate } from "gatsby"
 import styled from "styled-components"
 import short from "short-uuid"
 import SendEmail from "../utils/SendEmail"
+import { emailHtml } from "./emailHtml"
 
 const Form = () => {
   const translator = short()
@@ -11,55 +13,61 @@ const Form = () => {
         name="signup"
         method="post"
         action={process.env.GATSBY_X_REGISTER_URL}
-        onSubmit={(event) => {
+        onSubmit={event => {
           let experiences = ``
           let themes = ``
           event.target.skillsexperiences.forEach(element => {
-            experiences = element.checked ? experiences + element.value + ", " : experiences
-
-          });
+            experiences = element.checked
+              ? experiences + element.value + ", "
+              : experiences
+          })
           event.target.themes.forEach(element => {
             themes = element.checked ? themes + element.value + ", " : themes
-
-          });
+          })
 
           const user = {
             name: `${event.target.firstnames.value} ${event.target.lastname.value}`,
             ageGroup: event.target.age.value,
             email: event.target.email.value,
-            country: event.target.country.value,
-            experiences: experiences + event.target.skillsexperiences_other.value,
+            country:
+              event.target.country.value + event.target.country_other.value,
+            experiences:
+              experiences + event.target.skillsexperiences_other.value,
             themes: themes,
             requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c`, // TODO: #38 find a better way to post request ID,
             need_help: event.target.needhelp.value,
           }
-          fetch(`${process.env.GATSBY_X_REGISTER_URL}`, { // "http://localhost:9000/ReceiveRegistration"
-            method: 'POST',
+          fetch(`${process.env.GATSBY_X_REGISTER_URL}`, {
+            method: "POST",
             body: JSON.stringify(user),
-            mode: "cors"
-          }).then((response) => response.json())
-            .then((responseData) => {
-              if (responseData.variables.email) alert("Your email is already registered")
+            mode: "cors",
+          })
+            .then(response => response.json())
+            .then(responseData => {
+              if (responseData.variables.email)
+                alert("Your email is already registered")
               else if (responseData.variables.user_id) {
-                const requestId = translator.fromUUID(responseData.variables.request_id)
-                const userId = translator.fromUUID(responseData.variables.user_id)
-
+                const requestId = translator.fromUUID(
+                  responseData.variables.request_id
+                )
+                const userId = translator.fromUUID(
+                  responseData.variables.user_id
+                )
+                const confirmationUrl = `${process.env.GATSBY_X_CONFIRM_URL}/${requestId}/${userId}`
+                console.log(confirmationUrl)
                 SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
                   to: `${user.email}`,
-                  subject: `Registration to North Atlantic Corona Challenge`,
-                  html: `<p>Dear ${user.name}.</p></br>
-                  <p>Thank you for registering to the North Atlantic Corona Challenge!</p></br>
-                    <p> Please click on the following <a href="${
-                    process.env.GATSBY_X_CONFIRM_URL
-                    }/${requestId}/${userId}">link</a> to finish your sign up, and to be redirected to the right workspace. It's important that you use this email to login with - you won't able to access the event otherwise.</p>
-                `,
+                  subject: `Corona Challenge confirmation link`,
+                  html: emailHtml(user.name, confirmationUrl)
                 })
-                window.location.href = `/registered`
+                navigate(`/registered`, {
+                  state: { requestId: `2009906c-a06f-4aee-b0ea-a38b00c5779c` },
+                })
               }
             })
-            .catch(error => console.warn(error));
+            .catch(error => console.warn(error))
 
-          event.preventDefault();
+          event.preventDefault()
         }}
       >
         <FieldContainer>
@@ -68,7 +76,12 @@ const Form = () => {
           <FieldStyle>
             <LabelStyle>First Names</LabelStyle>
             <br />
-            <InputStyle type="text" name="firstnames" id="firstnames" required />
+            <InputStyle
+              type="text"
+              name="firstnames"
+              id="firstnames"
+              required
+            />
           </FieldStyle>
           <FieldStyle>
             <LabelStyle>Last Name</LabelStyle>
@@ -91,7 +104,9 @@ const Form = () => {
                 value="age1617"
                 required
               />
-              <CheckboxLabelStyle htmlFor="age1617">16-17 years</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="age1617">
+                16-17 years
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -101,7 +116,9 @@ const Form = () => {
                 value="age1830"
                 required
               />
-              <CheckboxLabelStyle htmlFor="age1830">18-30 years</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="age1830">
+                18-30 years
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -111,12 +128,14 @@ const Form = () => {
                 value="age31plus"
                 required
               />
-              <CheckboxLabelStyle htmlFor="age31plus">31+ years</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="age31plus">
+                31+ years
+              </CheckboxLabelStyle>
               <br />
             </CheckboxGroupStyle>
           </FieldStyle>
           <FieldStyle>
-            <LabelStyle>Country</LabelStyle>
+            <LabelStyle>COUNTRY/REGION</LabelStyle>
             <br />
             <CheckboxGroupStyle>
               <CheckboxStyle
@@ -126,7 +145,9 @@ const Form = () => {
                 value="greenland"
                 required
               />
-              <CheckboxLabelStyle htmlFor="greenland">GREENLAND</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="greenland">
+                GREENLAND
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -148,7 +169,7 @@ const Form = () => {
               />
               <CheckboxLabelStyle htmlFor="faroeislands">
                 FAROE ISLANDS
-            </CheckboxLabelStyle>
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -158,7 +179,9 @@ const Form = () => {
                 value="scotland"
                 required
               />
-              <CheckboxLabelStyle htmlFor="scotland">SCOTLAND</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="scotland">
+                SCOTLAND
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -170,7 +193,7 @@ const Form = () => {
               />
               <CheckboxLabelStyle htmlFor="coastalnorway">
                 COASTAL NORWAY
-            </CheckboxLabelStyle>
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -180,7 +203,10 @@ const Form = () => {
                 value="other"
                 required
               />
-              <CheckboxLabelStyle htmlFor="other">OTHER</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="other">
+                OTHER, EXPLAIN YOUR LINKS TO THE NORTH ATLANTIC
+              </CheckboxLabelStyle>
+              <InputOtherStyle type="text" name="country_other" />
               <br />
             </CheckboxGroupStyle>
           </FieldStyle>
@@ -194,7 +220,9 @@ const Form = () => {
                 id="savelives"
                 value="savelives"
               />
-              <CheckboxLabelStyle htmlFor="savelives">SAVE LIVES</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="savelives">
+                SAVE LIVES
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -205,7 +233,7 @@ const Form = () => {
               />
               <CheckboxLabelStyle htmlFor="savecommunities">
                 SAVE COMMUNITIES
-            </CheckboxLabelStyle>
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -216,7 +244,7 @@ const Form = () => {
               />
               <CheckboxLabelStyle htmlFor="savebusinesses">
                 SAVE BUSINESSES
-            </CheckboxLabelStyle>
+              </CheckboxLabelStyle>
               <br />
             </CheckboxGroupStyle>
           </FieldStyle>
@@ -232,7 +260,7 @@ const Form = () => {
               />
               <CheckboxLabelStyle htmlFor="projectmanagement">
                 PROJECT MANAGEMENT
-            </CheckboxLabelStyle>
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -250,7 +278,9 @@ const Form = () => {
                 id="software"
                 value="software"
               />
-              <CheckboxLabelStyle htmlFor="software">SOFTWARE</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="software">
+                SOFTWARE
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -259,7 +289,9 @@ const Form = () => {
                 id="hardware"
                 value="hardware"
               />
-              <CheckboxLabelStyle htmlFor="hardware">HARDWARE</CheckboxLabelStyle>
+              <CheckboxLabelStyle htmlFor="hardware">
+                HARDWARE
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -270,7 +302,7 @@ const Form = () => {
               />
               <CheckboxLabelStyle htmlFor="conceptdevelopment">
                 CONCEPT DEVELOPMENT
-            </CheckboxLabelStyle>
+              </CheckboxLabelStyle>
               <br />
               <br />
               <CheckboxStyle
@@ -281,7 +313,7 @@ const Form = () => {
               />
               <CheckboxLabelStyle htmlFor="other">
                 OTHER, PLEASE SPECIFY
-            </CheckboxLabelStyle>
+              </CheckboxLabelStyle>
               <InputOtherStyle type="text" name="skillsexperiences_other" />
               <br />
             </CheckboxGroupStyle>
@@ -289,7 +321,7 @@ const Form = () => {
           <FieldStyle>
             <LabelStyle>
               Do you want the organisers to help you find a team?
-          </LabelStyle>
+            </LabelStyle>
             <br />
             <CheckboxGroupStyle>
               <CheckboxStyle
@@ -317,15 +349,17 @@ const Form = () => {
           <DescriptionParagraphStyle>
             The organizers are free to use the submitted videos for marketing
             purposes.
-        </DescriptionParagraphStyle>
+          </DescriptionParagraphStyle>
           <DescriptionParagraphStyle>
-            By submitting this form you agree to our <a href="/privacypolicy">Privacy Policy</a> and our <a href="/rules">Rules and Code of Conduct</a>.
-        </DescriptionParagraphStyle>
+            By submitting this form you agree to our{" "}
+            <a href="/privacypolicy">Privacy Policy</a> and our{" "}
+            <a href="/rules">Rules and Code of Conduct</a>.
+          </DescriptionParagraphStyle>
           <DescriptionParagraphStyle>
             All personal data will be treated in accordance with the{" "}
             <a href="https://gdpr-info.eu/">
               EU's General Data Protection Regulation (GDPR)
-          </a>
+            </a>
           </DescriptionParagraphStyle>
           <ButtonStyle type="submit">SIGN UP FOR EVENT</ButtonStyle>
         </DescriptionContainerStyle>
