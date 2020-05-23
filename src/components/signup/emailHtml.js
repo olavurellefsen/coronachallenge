@@ -92,7 +92,9 @@ export const emailHtml = (name, url) => `<!doctype html>
           <div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; max-width: 580px; padding: 10px;">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
+            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">
+              Please click the button below to finish your sign up for the Corona Challenge.
+            </span>
             <table class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff; border-radius: 3px;">
 
               <!-- START MAIN CONTENT AREA -->
@@ -105,7 +107,7 @@ export const emailHtml = (name, url) => `<!doctype html>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">
                         Thank you for registering for the North Atlantic Corona Challenge. 
                         Please click the button below to finish your sign up. 
-                        It is important that you use this email to login with; you will not be able to access the event otherwise.</p>
+                        </p>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
                           <tbody>
                             <tr>
@@ -126,7 +128,7 @@ export const emailHtml = (name, url) => `<!doctype html>
                           </tbody>
                         </table>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">
-                        Good luck with the Corona Challenge.</p>
+                        It is important that you use this link to login with; you will not be able to access the event otherwise.</p>
                       </td>
                     </tr>
                   </table>
@@ -142,7 +144,7 @@ export const emailHtml = (name, url) => `<!doctype html>
                 <tr>
                   <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
                     <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">
-                      The North Atlantic Corona Challenge event is a collaboration between Nordic Atlantic Cooperation (NORA) and Highlands and Islands Enterprise (HIE)
+                      The North Atlantic Corona Challenge event is a collaboration between Nordic Atlantic Cooperation (<a href="https://nora.fo">NORA</a>) and Highlands and Islands Enterprise (<a href="https://hie.co.uk">HIE</a>)
                     </span>
                   </td>
                 </tr>
