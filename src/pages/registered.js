@@ -7,7 +7,7 @@ const Registered = ({ location }) => {
   return (
     <Layout>
       {location.state ? (
-        location.state.requestId === `2009906c-a06f-4aee-b0ea-a38b00c5779c` && (
+        location.state.requestId === `${process.env.GATSBY_X_REQUEST_ID}` && (
           <>
             <SEO title="Sign up received" />
             <TextStyle>Sign up received.</TextStyle>
