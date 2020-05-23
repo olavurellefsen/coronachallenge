@@ -15,7 +15,7 @@ import Image from "../images/girl-smartphone-beach-dark-1200x630.jpg"
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Home"
+      title="North Atlantic Corona Challenge"
       image={{ src: Image, width: 1200, height: 630 }}
       pathname="/"
     />
