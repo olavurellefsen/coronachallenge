@@ -1,7 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import HiepLogo from "./hiep-logo"
+import HieLogo from "./hie-logo"
 import DhcsLogo from "./dhcs-logo"
+import NoraLogo from "./nora-logo"
+import TokniLogo from "./tokni-logo"
 
 const AboutUs = () => (
   <AboutUsContainer>
@@ -45,8 +48,11 @@ const AboutUs = () => (
       Highlands and Islands European Partnership (HIEP), Scottish Government´s
       Digital Health and Care CivTech
     </AboutUsDescriptionStyle>
+    <LinkStyle href="https://www.hie.co.uk/"><HieLogo /></LinkStyle>
+    <LinkStyle href="https://www.nora.fo"><NoraLogo /></LinkStyle>
     <HiepLogo />
     <DhcsLogo />
+    <LinkStyle href="https://www.tokni.com"><TokniLogo /></LinkStyle>
   </AboutUsContainer>
 )
 

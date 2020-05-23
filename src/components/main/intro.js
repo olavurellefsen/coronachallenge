@@ -28,7 +28,7 @@ const Intro = () => (
       Atlantic region.
     </IntroDescriptionStyle>
     <IntroDescriptionStyle>
-      Organized by Nordic Atlantic Cooperation (NORA) and Highlands and Islands
+      Organised by Nordic Atlantic Cooperation (NORA) and Highlands and Islands
       Enterprise (HIE).
     </IntroDescriptionStyle>
     <IntroDescriptionStyle>

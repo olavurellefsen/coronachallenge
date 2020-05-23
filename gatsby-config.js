@@ -3,6 +3,7 @@ module.exports = {
     title: `North Atlantic Corona Challenge`,
     description: `A 48-hour online challenge to tackle the Covid-19 Crisis`,
     author: `@tokni`,
+    siteUrl: `https://www.coronachallenge.fo`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
