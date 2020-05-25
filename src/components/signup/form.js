@@ -18,11 +18,11 @@ const Form = () => {
           let themes = ``
           event.target.skillsexperiences.forEach(element => {
             experiences = element.checked
-              ? experiences + element.value + ", "
+              ? experiences + element.value + ";"
               : experiences
           })
           event.target.themes.forEach(element => {
-            themes = element.checked ? themes + element.value + ", " : themes
+            themes = element.checked ? themes + element.value + ";" : themes
           })
 
           const user = {
@@ -30,9 +30,9 @@ const Form = () => {
             ageGroup: event.target.age.value,
             email: event.target.email.value,
             country:
-              event.target.country.value + event.target.country_other.value,
+              event.target.country.value + `!${event.target.country_other.value}`,
             experiences:
-              experiences + event.target.skillsexperiences_other.value,
+              experiences + `!${event.target.skillsexperiences_other.value}`,
             themes: themes,
             requestId: `${process.env.GATSBY_X_REQUEST_ID}`,
             need_help: event.target.needhelp.value,
@@ -309,12 +309,6 @@ const Form = () => {
               </CheckboxLabelStyle>
               <br />
               <br />
-              <CheckboxStyle
-                type="checkbox"
-                name="skillsexperiences"
-                id="other"
-                value="other"
-              />
               <CheckboxLabelStyle htmlFor="other">
                 OTHER, PLEASE SPECIFY
               </CheckboxLabelStyle>
