@@ -18,9 +18,7 @@ const Header = () => (
 )
 
 const HeaderContainer = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: static;
   width: 100%;
 `
 

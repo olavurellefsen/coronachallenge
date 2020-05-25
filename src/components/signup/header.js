@@ -10,9 +10,7 @@ const Header = () => (
 )
 
 const HeaderContainer = styled.a`
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: static;
   width: 100%;
 `
 
