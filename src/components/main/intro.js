@@ -37,6 +37,7 @@ const Intro = () => (
       join the fun!
     </IntroDescriptionStyle>
     <ButtonStyle href="/inspiration">INSPIRATION</ButtonStyle>
+    <ButtonStyle href="/speaker">HEINI ZACHARIASSEN - SPEAKER</ButtonStyle>
   </IntroContainer>
 )
 
