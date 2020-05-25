@@ -14,7 +14,6 @@ const Page = () => (
       pathname="/"
     />
     <Header />
-    <inspiration />
     <Intro />
     <AboutUs />
   </Layout>
