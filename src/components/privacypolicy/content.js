@@ -8,12 +8,11 @@ const Content = () => (
     <SectionHeaderStyle>Who we are</SectionHeaderStyle>
 
     <DescriptionStyle>
-      The principal drivers of this project is North Atlantic Cooperation (NORA)
-      and Islands Enterprise (HIE). Please learn more about the organisers on
-      their web pages: <a href="https://www.nora.fo">nora.fo</a> and{" "}
-      <a href="https://www.hie.co.uk/">hie.co.uk</a>.
+      The organisers of the North Atlantic Corona Challenge (NACC) are Nordic
+      Atlantic Cooperation (<a href="https://www.nora.fo">NORA</a>) and
+      Highlands and Islands Enterprise (<a href="https://www.hie.co.uk/">HIE</a>
+      ).
     </DescriptionStyle>
-
     <DescriptionStyle>
       Your personal data is processed as described in this Privacy Policy.
     </DescriptionStyle>
