@@ -38,6 +38,7 @@ const Intro = () => (
     </IntroDescriptionStyle>
     <ButtonStyle href="/inspiration">INSPIRATION</ButtonStyle>
     <ButtonStyle href="/speaker">HEINI ZACHARIASSEN - SPEAKER</ButtonStyle>
+    <ButtonStyle href="/media">MEDIA COVERAGE</ButtonStyle>
   </IntroContainer>
 )
 
