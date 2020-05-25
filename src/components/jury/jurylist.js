@@ -20,4 +20,9 @@ export const jurylist = [
     country: "Scotland",
     position: "Director, Institute for Northern Studes, UHI",
   },
+  {
+    name: "Joel undir Leitinum",
+    country: "Faroe Islands",
+    position: "CEO, Posta Faroe Islands, and founder of TechCare",
+  },
 ]
