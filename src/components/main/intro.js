@@ -5,8 +5,9 @@ import NorthAtlantic from "./northatlantic"
 const Intro = () => (
   <IntroContainer>
     <IntroDescriptionStyle>
-      Are you a young person living in or coming from the North Atlantic and
-      have an idea that can help our region, then we want to hear from you!
+      Are you a young person, who either lives in or comes from the North
+      Atlantic, and has an idea that can help our region? Then we want to hear
+      from you!
     </IntroDescriptionStyle>
     <SignupButtonStyle href="/signup">SIGN UP</SignupButtonStyle>
     <IntroTitleStyle>
