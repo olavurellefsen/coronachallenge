@@ -9,7 +9,7 @@ const Intro = () => (
       Atlantic, and has an idea that can help our region? Then we want to hear
       from you!
     </IntroDescriptionStyle>
-    <SignupButtonStyle href="/signup">SIGN UP</SignupButtonStyle>
+    <ButtonStyle href="/signup">SIGN UP</ButtonStyle>
     <IntroTitleStyle>
       A 48 HOUR ONLINE CHALLENGE TO TACKLE COVID-19 CRISIS
       <br />
@@ -36,6 +36,7 @@ const Intro = () => (
       Do you want to participate in this North Atlantic challenge? Sign up and
       join the fun!
     </IntroDescriptionStyle>
+    <ButtonStyle href="/inspiration">INSPIRATION</ButtonStyle>
   </IntroContainer>
 )
 
@@ -61,7 +62,7 @@ const IntroDescriptionStyle = styled.div`
   margin-top: 48px;
 `
 
-const SignupButtonStyle = styled.a`
+const ButtonStyle = styled.a`
   display: block;
   position: relative;
   margin: 40px 10px;
