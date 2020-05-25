@@ -204,7 +204,7 @@ const Form = () => {
                 type="radio"
                 name="country"
                 id="other"
-                value="other"
+                value=""
                 required
               />
               <CheckboxLabelStyle htmlFor="other">
