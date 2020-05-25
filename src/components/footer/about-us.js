@@ -8,7 +8,7 @@ import NoraLogo from "./nora-logo"
 import TokniLogo from "./tokni-logo"
 
 const AboutUs = () => (
-  <AboutUsContainer>
+  <AboutUsContainer id="aboutus">
     <AboutUsTitleStyle>Contact us</AboutUsTitleStyle>
     <LinkStyle href="https://nora.fo/secretariats"><Oystein /></LinkStyle>
     <AboutUsDescriptionStyle>
@@ -70,6 +70,7 @@ const AboutUsContainer = styled.div`
   background: #434343;
   color: white;
   padding: 40px 10px;
+  text-decoration: none;
 `
 
 const AboutUsTitleStyle = styled.div`

@@ -38,13 +38,14 @@ const Intro = () => (
     </IntroDescriptionStyle>
     <ButtonStyle href="/inspiration">INSPIRATION</ButtonStyle>
     <ButtonStyle href="/speaker">HEINI ZACHARIASSEN - SPEAKER</ButtonStyle>
+    <ButtonStyle href="/media">MEDIA COVERAGE</ButtonStyle>
   </IntroContainer>
 )
 
 const IntroContainer = styled.div`
   position: relative;
   max-width: 1608px;
-  margin: 640px 5vw 20px 5vw;
+  margin: 20px 5vw;
 `
 
 const IntroTitleStyle = styled.div`

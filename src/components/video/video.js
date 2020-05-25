@@ -11,8 +11,8 @@ const Content = () => (
 )
 
 const VideoContainer = styled.div`
-  margin: 320px 5vw 0 5vw;
-  overflow: hidden;
+  margin: 40px 5vw 0 5vw;
+  overflow-y: hidden;
 `
 
 const VideoStyle = styled.video`
