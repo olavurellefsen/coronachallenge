@@ -17,7 +17,7 @@ const Registered = ({ location }) => {
             </TextStyle>
             <TextStyle>
               You might want to check your spam folder if you cannot find the
-              email.
+              email. The email will be from registration@proposalpot.com.
             </TextStyle>
           </>
         )
