@@ -9,9 +9,8 @@ import Image from "../images/girl-smartphone-beach-dark-1200x630.jpg"
 
 const Page = () => (
   <Layout>
-    <SEO title="Video" />
     <SEO
-      title="Home"
+      title="Video"
       image={{ src: Image, width: 1200, height: 630 }}
       pathname="/"
     />
