@@ -1,0 +1,35 @@
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
+
+const ImageSection = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        desktop: file(relativePath: { eq: "oystein.jpg" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 128) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `}
+    render={data => {
+      const imageData = data.desktop.childImageSharp.fluid
+      return <ImageSectionStyle fluid={imageData} />
+    }}
+  />
+)
+
+const ImageSectionStyle = styled(BackgroundImage)`
+  width: 128px;
+  height: 128px;
+  max-width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+`
+
+export default ImageSection

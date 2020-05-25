@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Oystein from "./oystein"
 import HiepLogo from "./hiep-logo"
 import HieLogo from "./hie-logo"
 import DhcsLogo from "./dhcs-logo"
@@ -8,6 +9,12 @@ import TokniLogo from "./tokni-logo"
 
 const AboutUs = () => (
   <AboutUsContainer>
+    <AboutUsTitleStyle>Contact us</AboutUsTitleStyle>
+    <LinkStyle href="https://nora.fo/secretariats"><Oystein /></LinkStyle>
+    <AboutUsDescriptionStyle>
+      If you have questions about the event, you can contact Mr Øystein Andresen at NORA.<br/>
+      Mobile +298 214430 - Email <a href="mailto:oystein@nora.fo">oystein@nora.fo</a>
+    </AboutUsDescriptionStyle>
     <AboutUsTitleStyle>About us</AboutUsTitleStyle>
     <AboutUsDescriptionStyle>
       The North Atlantic Corona Challenge event is a collaboration between
