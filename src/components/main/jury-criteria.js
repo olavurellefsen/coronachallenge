@@ -26,6 +26,8 @@ const JuryCriteria = () => (
     <JuryCriteriaDescriptionStyle>
       The project should be demand-led and with a commercial potential
     </JuryCriteriaDescriptionStyle>
+    <ButtonStyle href="/jury">Jury</ButtonStyle>
+    <ButtonStyle href="/mentors">Mentors</ButtonStyle>
   </JuryCriteriaContainer>
 )
 
@@ -61,6 +63,24 @@ const JuryCriteriaDescriptionStyle = styled.div`
   text-align: center;
   margin: 10px 0 30px 0;
   padding: 10px;
+`
+
+const ButtonStyle = styled.a`
+  display: block;
+  position: relative;
+  margin: 40px 10px;
+  max-width: 400px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  background: #006eb6;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 1;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  text-align: center;
 `
 
 export default JuryCriteria
