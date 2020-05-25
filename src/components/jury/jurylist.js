@@ -14,11 +14,13 @@ export const jurylist = [
     name: "Christian Wennecke",
     country: "Greenland",
     position: "COO, Greenland Business",
+    image: "christian.jpg",
   },
   {
     name: "Prof Donna Heddle",
     country: "Scotland",
     position: "Director, Institute for Northern Studes, UHI",
+    image: "donna.jpg",
   },
   {
     name: "Joel undir Leitinum",

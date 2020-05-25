@@ -38,16 +38,19 @@ export const mentorlist = [
     name: "Jens-Jakob Lennert-Sandgreen",
     country: "Greenland",
     position: "Business Development Consultant, Greenland Business",
+    image: "jens-jakob.jpg",
   },
   {
     name: "Fida Abu Libdeh",
     country: "Iceland",
     position: "Founder and CEO, Geosolica",
+    image: "fida.jpg",
   },
   {
     name: "Dr Tom McCallum",
     country: "Scotland",
     position: "Academic Developer, Moray College UHI",
+    image: "thomas.png",
   },
   {
     name: "Dr David Heaney",
