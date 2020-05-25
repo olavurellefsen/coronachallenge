@@ -65,34 +65,4 @@ const DescriptionStyle = styled.div`
   margin: 20px 0;
 `
 
-const VideoContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-`
-
-const VideoBox = styled.div`
-  width: 350px;
-  max-width: 350px;
-  margin: 0 20px 20px 0;
-  padding: 10px;
-  background: #ccc;
-`
-
-const TitleStyle = styled.div`
-  color: #006eb6;
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: left;
-  margin: 0;
-`
-
-const CompetitionStyle = styled.div`
-  color: black;
-  font-size: 18px;
-  text-align: left;
-  margin: 0;
-`
-
 export default Content
