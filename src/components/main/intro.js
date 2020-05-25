@@ -45,7 +45,7 @@ const Intro = () => (
 const IntroContainer = styled.div`
   position: relative;
   max-width: 1608px;
-  margin: 640px 5vw 20px 5vw;
+  margin: 20px 5vw;
 `
 
 const IntroTitleStyle = styled.div`

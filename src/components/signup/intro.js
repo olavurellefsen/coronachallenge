@@ -9,7 +9,7 @@ const Intro = () => (
 
 const IntroContainer = styled.div`
   position: relative;
-  margin: 540px 0 0 0;
+  margin: 0;
   padding: 60px 5vw 10px 5vw;
   background: #E8E8E8;
 `

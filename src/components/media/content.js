@@ -77,7 +77,7 @@ const Content = () => {
 }
 
 const ContentContainer = styled.div`
-  margin: 540px 0 0 0;
+  margin: 0;
   padding: 60px 5vw 10px 5vw;
   background: #e8e8e8;
 `
