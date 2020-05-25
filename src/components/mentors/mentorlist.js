@@ -24,21 +24,6 @@ export const mentorlist = [
     position: "CFO, Brim Explorer",
   },
   {
-    name: "Odd Jarl Borch",
-    country: "Norway",
-    position: "Professor, Nord University, leader NORDLAB",
-  },
-  {
-    name: "Erlend Bullvåg",
-    country: "Norway",
-    position: "Dean, Nord University Business School",
-  },
-  {
-    name: "Anja Salo",
-    country: "Norway",
-    position: "Communication director, Polar institute",
-  },
-  {
     name: "Ingi Vífill Guðmundsson",
     country: "Iceland",
     position:
@@ -48,16 +33,6 @@ export const mentorlist = [
     name: "Sóley Heradóttir Hammer",
     country: "Faroe Islands",
     position: "Leader, Hugskotid Torshavn",
-  },
-  {
-    name: "Fida Abu Libdeh",
-    country: "Iceland",
-    position: "Founder and CEO, Geosolica",
-  },
-  {
-    name: "Snjólaug Ólafsdóttir",
-    country: "Iceland",
-    position: "Founder, Andrými sustainability center",
   },
   {
     name: "Jens-Jakob Lennert-Sandgreen",
