@@ -39,4 +39,19 @@ export const mentorlist = [
     country: "Greenland",
     position: "Business Development Consultant, Greenland Business",
   },
+  {
+    name: "Fida Abu Libdeh",
+    country: "Iceland",
+    position: "Founder and CEO, Geosolica",
+  },
+  {
+    name: "Dr Tom McCallum",
+    country: "Scotland",
+    position: "Academic Developer, Moray College UHI",
+  },
+  {
+    name: "Dr David Heaney",
+    country: "Scotland",
+    position: "Director, Rossal Research and Consultancy",
+  },
 ]
