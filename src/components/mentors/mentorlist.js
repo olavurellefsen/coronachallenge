@@ -50,6 +50,7 @@ export const mentorlist = [
     name: "Dr Tom McCallum",
     country: "Scotland",
     position: "Academic Developer, Moray College UHI",
+    image: "thomas.png",
   },
   {
     name: "Dr David Heaney",

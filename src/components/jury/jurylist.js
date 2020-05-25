@@ -20,6 +20,7 @@ export const jurylist = [
     name: "Prof Donna Heddle",
     country: "Scotland",
     position: "Director, Institute for Northern Studes, UHI",
+    image: "donna.jpg",
   },
   {
     name: "Joel undir Leitinum",
