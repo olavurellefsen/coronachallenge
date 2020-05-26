@@ -19,9 +19,10 @@ export const mentorlist = [
     image: "rani.jpg",
   },
   {
-    name: "Espen Berg-Larsen",
+    name: "Espen Larsen-Hakkebo",
     country: "Norway",
     position: "CFO, Brim Explorer",
+    image: "espen.jpg",
   },
   {
     name: "Ingi Vífill Guðmundsson",
