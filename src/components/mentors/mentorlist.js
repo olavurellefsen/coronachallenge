@@ -29,6 +29,7 @@ export const mentorlist = [
     country: "Iceland",
     position:
       "Project manager, social media marketing, Innovation Center Iceland",
+    image: "ingi.jpg",
   },
   {
     name: "Sóley Heradóttir Hammer",
@@ -59,11 +60,5 @@ export const mentorlist = [
     country: "Scotland",
     position: "Director, Rossal Research and Consultancy",
     image: "david.jpg",
-  },
-  {
-    name: "Ingi Vífill Guðmundsson",
-    country: "Iceland",
-    position: "Project manager, social media marketing, Innovation Center Iceland",
-    image: "ingi.jpg",
   },
 ]
