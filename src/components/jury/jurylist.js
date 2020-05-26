@@ -26,5 +26,6 @@ export const jurylist = [
     name: "Joel undir Leitinum",
     country: "Faroe Islands",
     position: "CEO, Posta Faroe Islands, and founder of TechCare",
+    image: "joel.jpg",
   },
 ]
