@@ -19,9 +19,10 @@ export const mentorlist = [
     image: "rani.jpg",
   },
   {
-    name: "Espen Berg-Larsen",
+    name: "Espen Larsen-Hakkebo",
     country: "Norway",
     position: "CFO, Brim Explorer",
+    image: "espen.jpg",
   },
   {
     name: "Ingi Vífill Guðmundsson",
@@ -58,5 +59,11 @@ export const mentorlist = [
     country: "Scotland",
     position: "Director, Rossal Research and Consultancy",
     image: "david.jpg",
+  },
+  {
+    name: "Ingi Vífill Guðmundsson",
+    country: "Iceland",
+    position: "Project manager, social media marketing, Innovation Center Iceland",
+    image: "ingi.jpg",
   },
 ]
