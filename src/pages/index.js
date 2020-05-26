@@ -5,10 +5,8 @@ import Header from "../components/main/header"
 import Intro from "../components/main/intro"
 import Themes from "../components/main/themes"
 import TargetGroup from "../components/main/targetgroup"
-import Video from "../components/main/video"
 import JuryCriteria from "../components/main/jury-criteria"
 import Prizes from "../components/main/prizes"
-import EventSchedule from "../components/main/eventschedule"
 import AboutUs from "../components/footer/about-us"
 import Image from "../images/girl-smartphone-beach-dark-1200x630.jpg"
 
@@ -23,10 +21,8 @@ const IndexPage = () => (
     <Intro />
     <Themes />
     <TargetGroup />
-    <Video />
     <JuryCriteria />
     <Prizes />
-    <EventSchedule />
     <AboutUs />
   </Layout>
 )

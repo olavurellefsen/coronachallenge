@@ -9,6 +9,9 @@ const BurgerMenu = () => (
     <a id="signup" className="menu-item" href="/signup">
       Sign up
     </a>
+    <a id="schedule" className="menu-item" href="/schedule">
+      Schedule
+    </a>
     <a id="inspiration" className="menu-item" href="/inspiration">
       Inspiration
     </a>
