@@ -33,6 +33,7 @@ export const mentorlist = [
     name: "Sóley Heradóttir Hammer",
     country: "Faroe Islands",
     position: "Leader, Hugskotid Torshavn",
+    image: "soley.jpg",
   },
   {
     name: "Jens-Jakob Lennert-Sandgreen",
@@ -56,5 +57,6 @@ export const mentorlist = [
     name: "Dr David Heaney",
     country: "Scotland",
     position: "Director, Rossal Research and Consultancy",
+    image: "david.jpg",
   },
 ]
