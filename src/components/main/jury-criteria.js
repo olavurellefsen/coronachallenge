@@ -27,7 +27,6 @@ const JuryCriteria = () => (
       The project should be demand-led and with a commercial potential
     </JuryCriteriaDescriptionStyle>
     <ButtonStyle href="/jury">Jury</ButtonStyle>
-    <ButtonStyle href="/mentors">Mentors</ButtonStyle>
   </JuryCriteriaContainer>
 )
 

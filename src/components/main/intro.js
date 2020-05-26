@@ -41,9 +41,6 @@ const Intro = () => {
         Do you want to participate in this North Atlantic challenge? Sign up and
         join the fun!
       </IntroDescriptionStyle>
-      <ButtonStyle href="/inspiration">INSPIRATION</ButtonStyle>
-      <ButtonStyle href="/speaker">HEINI ZACHARIASSEN - SPEAKER</ButtonStyle>
-      <ButtonStyle href="/media">MEDIA COVERAGE</ButtonStyle>
     </IntroContainer>
   )
 }
