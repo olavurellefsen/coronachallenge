@@ -60,4 +60,10 @@ export const mentorlist = [
     position: "Director, Rossal Research and Consultancy",
     image: "david.jpg",
   },
+  {
+    name: "Ingi Vífill Guðmundsson",
+    country: "Iceland",
+    position: "Project manager, social media marketing, Innovation Center Iceland",
+    image: "ingi.jpg",
+  },
 ]
