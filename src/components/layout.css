@@ -631,18 +631,18 @@ pre tt:after {
   position: fixed;
   width: 48px;
   height: 40px;
-  left: 36px;
-  top: 36px;
+  left: 24px;
+  top: 24px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #fff;
+  background: #ddd;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #ccc;
+  background: #aaa;
 }
 
 /* Position and sizing of clickable cross button */
