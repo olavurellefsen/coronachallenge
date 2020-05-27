@@ -5,9 +5,10 @@ import FacebookIcon from "../../images/facebook.svg";
 import InstagramIcon from "../../images/instagram.svg";
 
 const Header = () => (
-  <HeaderContainer href="/">
+  <HeaderContainer>
     <Background />
     <ProjectTitleStyle>North Atlantic Corona Challenge 2020</ProjectTitleStyle>
+    <VideoTitleStyle>INTRO VIDEO</VideoTitleStyle>
     <SocialMediaContainer>
       <IconStyle href="https://www.facebook.com/coronachallenge" aria-label="Facebook"><FacebookIcon /></IconStyle>
       <IconStyle href="https://www.instagram.com/coronachallenge.fo/" aria-label="Instagram"><InstagramIcon /></IconStyle>
@@ -15,7 +16,7 @@ const Header = () => (
   </HeaderContainer>
 )
 
-const HeaderContainer = styled.a`
+const HeaderContainer = styled.div`
   position: static;
   width: 100%;
 `
@@ -27,6 +28,21 @@ const ProjectTitleStyle = styled.div`
   transform: translate(-50%, 0);
   color: white;
   background: #006eb6;
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.9;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  text-align: center;
+`
+
+const VideoTitleStyle = styled.div`
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  background: red;
   font-size: 28px;
   font-weight: 600;
   opacity: 0.9;
