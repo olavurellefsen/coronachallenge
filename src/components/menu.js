@@ -38,6 +38,9 @@ const BurgerMenu = () => (
     <a id="media" className="menu-item" href="/media">
       Media Coverage
     </a>
+    <a id="stream" className="menu-item" href="/stream">
+      Live Streaming
+    </a>
     <a id="contactus" className="menu-item" href="#aboutus">
       Contact us
     </a>
