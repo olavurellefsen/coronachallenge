@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import YouTube from "react-youtube"
 import Heini from "./heini"
 
 const Content = () => {
@@ -24,13 +23,11 @@ const Content = () => {
         successful global businesses. He leads the team from Vivino’s
         headquarters in San Francisco.
       </DescriptionStyle>
-      <YouTube
-        videoId="_nNutnR9aKk"
-        opts={{
-          height: "183",
-          width: "325",
-          position: "relative",
-        }}
+      <YouTubeStyle
+        src="https://www.youtube.com/embed/_nNutnR9aKk"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
       />
       <DescriptionStyle>
         Heini Zachariassen also hosts the YouTube channel{" "}
@@ -63,6 +60,11 @@ const DescriptionStyle = styled.div`
   font-size: 18px;
   text-align: left;
   margin: 20px 0;
+`
+
+const YouTubeStyle = styled.iframe`
+  width: 90vw;
+  height: 50.6vw;
 `
 
 export default Content
