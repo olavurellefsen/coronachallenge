@@ -18,6 +18,8 @@ const Content = ({ title = "DEFAULT TIME ZONE", offset = "0" }) => {
           <ScheduleItemStyle>
             {18 + offset}:00 <LineStyle />
             <br />
+            TEAMS ANNOUNCED
+            <br />
             IDEA COLLECTION
             <br />
             <ToolStyle>Platform: Slack</ToolStyle>
@@ -35,9 +37,7 @@ const Content = ({ title = "DEFAULT TIME ZONE", offset = "0" }) => {
             </ToolStyle>
           </ScheduleItemStyle>
           <ScheduleItemStyle>
-            {20 + offset}:30 <LineStyle />
-            <br />
-            TEAMS ANNOUNCED
+            {21 + offset}:00 <LineStyle />
             <br />
             WORK STARTS
             <br />
