@@ -3,6 +3,7 @@ export const jurylist = [
     name: "Hjørdis Vik",
     country: "Norway",
     position: "Department manager, Gründersenteret, Innovation Norway",
+    image: "hjordis.jpg",
   },
   {
     name: "Mjöll Waldorff",
