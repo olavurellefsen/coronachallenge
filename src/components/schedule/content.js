@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import SeaOfIce from "./sea-of-ice"
+import SeaOfIce from "../main/sea-of-ice"
 
-const EventSchedule = () => (
+const Content = () => (
   <EventScheduleContainer>
     <SeaOfIce />
     <EventScheduleTitleStyle>
@@ -17,11 +17,15 @@ const EventSchedule = () => (
           18:00 <LineStyle />
           <br />
           IDEA COLLECTION
+          <br />
+          <ToolStyle>Platform: Slack</ToolStyle>
         </ScheduleItemStyle>
         <ScheduleItemStyle>
           20:00 <LineStyle />
           <br />
           KICK-OFF WEBINAR
+          <br />
+          <ToolStyle>Platform: YouTube</ToolStyle>
         </ScheduleItemStyle>
         <ScheduleItemStyle>
           20:30 <LineStyle />
@@ -29,6 +33,8 @@ const EventSchedule = () => (
           TEAMS ANNOUNCED
           <br />
           WORK STARTS
+          <br />
+          <ToolStyle>Platform: Slack</ToolStyle>
         </ScheduleItemStyle>
       </DayContainer>
       <DayContainer>
@@ -37,16 +43,22 @@ const EventSchedule = () => (
           12:00 <LineStyle />
           <br />
           MENTORING STARTS
+          <br />
+          <ToolStyle>Platform: Slack</ToolStyle>
         </ScheduleItemStyle>
         <ScheduleItemStyle>
           17:00 <LineStyle />
           <br />
           MENTORING CHECKPOINT
+          <br />
+          <ToolStyle>Platform: Slack</ToolStyle>
         </ScheduleItemStyle>
         <ScheduleItemStyle>
           18:00 <LineStyle />
           <br />
           PRELIMINARY SUBMISSION DEADLINE
+          <br />
+          <ToolStyle>Platform: Proposal Pot</ToolStyle>
         </ScheduleItemStyle>
       </DayContainer>
       <DayContainer>
@@ -55,16 +67,22 @@ const EventSchedule = () => (
           11:00 <LineStyle />
           <br />
           MENTORING CHECKPOINT
+          <br />
+          <ToolStyle>Platform: Slack</ToolStyle>
         </ScheduleItemStyle>
         <ScheduleItemStyle>
           15:00 <LineStyle />
           <br />
           DEADLINE TO SUBMIT PROJECT RESULTS
+          <br />
+          <ToolStyle>Platform: Proposal Pot</ToolStyle>
         </ScheduleItemStyle>
         <ScheduleItemStyle>
           17:00-18:00 <LineStyle />
           <br />
           FINAL WEBINAR
+          <br />
+          <ToolStyle>Platform: YouTube</ToolStyle>
         </ScheduleItemStyle>
       </DayContainer>
     </AllDaysContainer>
@@ -110,7 +128,7 @@ const DayContainer = styled.div`
   margin: 10px;
   width: 325px;
   background: #006eb6;
-  height: 500px;
+  height: 550px;
 `
 
 const DayTitleStyle = styled.div`
@@ -129,8 +147,13 @@ const ScheduleItemStyle = styled.div`
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  height: 120px;
+  height: 140px;
   line-height: 1.1;
+`
+
+const ToolStyle = styled.span`
+  font-size: 14px;
+  color: rgba(0,111,182,0.92);
 `
 
 const LineStyle = styled.hr`
@@ -138,4 +161,4 @@ const LineStyle = styled.hr`
   margin: 5px;
 `
 
-export default EventSchedule
+export default Content
