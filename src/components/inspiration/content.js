@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import YouTube from "react-youtube"
 import { videolist } from "./videolist"
 
 const Content = () => {
@@ -15,13 +14,11 @@ const Content = () => {
         {videolist.map((video, i) => (
           <VideoBox key={i}>
             {video.youtubeid && (
-              <YouTube
-                videoId={video.youtubeid}
-                opts={{
-                  height: "183",
-                  width: "325",
-                  position: "relative",
-                }}
+                <YouTubeStyle
+                src={`https://www.youtube.com/embed/${video.youtubeid}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
             )}
             <TitleStyle>{video.title}</TitleStyle>
@@ -59,12 +56,13 @@ const VideoContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 92vw;
 `
 
 const VideoBox = styled.div`
-  width: 350px;
-  max-width: 350px;
-  margin: 0 20px 20px 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 40px 0;
   padding: 10px;
   background: #ccc;
 `
@@ -82,7 +80,13 @@ const CompetitionStyle = styled.div`
   color: black;
   font-size: 18px;
   text-align: left;
-  margin: 0;
+  margin: 0 0 40px 0;
+`
+
+const YouTubeStyle = styled.iframe`
+  margin: 0 auto;
+  width: 90vw;
+  height: 50.6vw;
 `
 
 export default Content

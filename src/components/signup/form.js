@@ -146,7 +146,7 @@ const Form = () => {
                 type="radio"
                 name="country"
                 id="greenland"
-                value="greenland"
+                value="Greenland"
                 required
               />
               <CheckboxLabelStyle htmlFor="greenland">
@@ -158,7 +158,7 @@ const Form = () => {
                 type="radio"
                 name="country"
                 id="iceland"
-                value="iceland"
+                value="Iceland"
                 required
               />
               <CheckboxLabelStyle htmlFor="iceland">ICELAND</CheckboxLabelStyle>
@@ -168,7 +168,7 @@ const Form = () => {
                 type="radio"
                 name="country"
                 id="faroeislands"
-                value="faroeislands"
+                value="Faroe Islands"
                 required
               />
               <CheckboxLabelStyle htmlFor="faroeislands">
@@ -180,7 +180,7 @@ const Form = () => {
                 type="radio"
                 name="country"
                 id="scotland"
-                value="scotland"
+                value="Scotland"
                 required
               />
               <CheckboxLabelStyle htmlFor="scotland">
@@ -192,7 +192,7 @@ const Form = () => {
                 type="radio"
                 name="country"
                 id="coastalnorway"
-                value="coastalnorway"
+                value="Coastal Norway"
                 required
               />
               <CheckboxLabelStyle htmlFor="coastalnorway">
@@ -222,7 +222,7 @@ const Form = () => {
                 type="checkbox"
                 name="themes"
                 id="savelives"
-                value="savelives"
+                value="#savelives"
               />
               <CheckboxLabelStyle htmlFor="savelives">
                 SAVE LIVES
@@ -233,7 +233,7 @@ const Form = () => {
                 type="checkbox"
                 name="themes"
                 id="savecommunities"
-                value="savecommunities"
+                value="#savecommunities"
               />
               <CheckboxLabelStyle htmlFor="savecommunities">
                 SAVE COMMUNITIES
@@ -244,7 +244,7 @@ const Form = () => {
                 type="checkbox"
                 name="themes"
                 id="savebusinesses"
-                value="savebusinesses"
+                value="#savebusinesses"
               />
               <CheckboxLabelStyle htmlFor="savebusinesses">
                 SAVE BUSINESSES
@@ -260,7 +260,7 @@ const Form = () => {
                 type="checkbox"
                 name="skillsexperiences"
                 id="projectmanagement"
-                value="projectmanagement"
+                value="Project management"
               />
               <CheckboxLabelStyle htmlFor="projectmanagement">
                 PROJECT MANAGEMENT
@@ -271,7 +271,7 @@ const Form = () => {
                 type="checkbox"
                 name="skillsexperiences"
                 id="health"
-                value="health"
+                value="Health"
               />
               <CheckboxLabelStyle htmlFor="health">HEALTH</CheckboxLabelStyle>
               <br />
@@ -280,7 +280,7 @@ const Form = () => {
                 type="checkbox"
                 name="skillsexperiences"
                 id="software"
-                value="software"
+                value="Software"
               />
               <CheckboxLabelStyle htmlFor="software">
                 SOFTWARE
@@ -291,7 +291,7 @@ const Form = () => {
                 type="checkbox"
                 name="skillsexperiences"
                 id="hardware"
-                value="hardware"
+                value="Hardware"
               />
               <CheckboxLabelStyle htmlFor="hardware">
                 HARDWARE
@@ -302,7 +302,7 @@ const Form = () => {
                 type="checkbox"
                 name="skillsexperiences"
                 id="conceptdevelopment"
-                value="conceptdevelopment"
+                value="Concept development"
               />
               <CheckboxLabelStyle htmlFor="conceptdevelopment">
                 CONCEPT DEVELOPMENT
