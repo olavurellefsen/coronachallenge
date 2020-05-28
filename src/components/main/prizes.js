@@ -33,8 +33,10 @@ const Prizes = () => (
 
 const PrizesContainer = styled.div`
   position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   max-width: 1608px;
-  margin: 40px 5vw;
+  margin: 40px 0;
   padding: 40px;
   background: #e8e8e8;
 `

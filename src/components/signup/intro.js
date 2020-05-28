@@ -9,9 +9,12 @@ const Intro = () => (
 
 const IntroContainer = styled.div`
   position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1608px;
   margin: 0;
   padding: 60px 5vw 10px 5vw;
-  background: #E8E8E8;
+  background: #e8e8e8;
 `
 
 const IntroTitleStyle = styled.div`

@@ -25,12 +25,12 @@ const ImageSection = () => (
 )
 
 const ImageSectionStyle = styled(BackgroundImage)`
+  position: relative;
   width: 320px;
   height: 285px;
   max-width: 100%;
   top: 0;
-  left: 5vw;
-  transform: translate(-50%, 0);
+  left: 0;
 `
 
 export default ImageSection

@@ -11,12 +11,16 @@ const Content = () => (
 )
 
 const VideoContainer = styled.div`
-  margin: 40px 5vw 0 5vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1608px;
+  margin: 40px 0;
   overflow-y: hidden;
 `
 
 const VideoStyle = styled.video`
-  max-width: 90vw;
+  max-width: 100vw;
 `
 
 export default Content
