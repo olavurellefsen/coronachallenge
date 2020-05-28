@@ -65,8 +65,10 @@ const AboutUs = () => (
 
 const AboutUsContainer = styled.div`
   position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   max-width: 1608px;
-  margin: 20px 5vw;
+  margin: 20px 0;
   background: #434343;
   color: white;
   padding: 40px 10px;

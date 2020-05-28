@@ -47,8 +47,10 @@ const Intro = () => {
 
 const IntroContainer = styled.div`
   position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   max-width: 1608px;
-  margin: 20px 5vw;
+  margin: 20px 0;
 `
 
 const IntroTitleStyle = styled.div`
@@ -70,8 +72,8 @@ const IntroDescriptionStyle = styled.div`
 const ButtonStyle = styled.a`
   display: block;
   position: relative;
-  margin: 40px 10px;
-  max-width: 400px;
+  margin: 40px 0;
+  max-width: 350px;
   left: 50%;
   transform: translate(-50%, 0);
   color: white;

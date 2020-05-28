@@ -41,6 +41,10 @@ const Content = () => {
 }
 
 const ContentContainer = styled.div`
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1608px;
   margin: 0;
   padding: 60px 5vw 10px 5vw;
   background: #e8e8e8;
@@ -65,6 +69,8 @@ const DescriptionStyle = styled.div`
 const YouTubeStyle = styled.iframe`
   width: 90vw;
   height: 50.6vw;
+  max-width: 1400px;
+  max-height: 787px;
 `
 
 export default Content

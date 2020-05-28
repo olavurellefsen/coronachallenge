@@ -45,7 +45,7 @@ const Content = () => {
       <DescriptionStyle>
         High North News:{" "}
         <LinkStyle href="https://www.highnorthnews.com/nb/konkurranse-motvirke-ringvirkningene-av-covid-19">
-        Konkurranse for å motvirke ringvirkningene av Covid-19
+          Konkurranse for å motvirke ringvirkningene av Covid-19
         </LinkStyle>
       </DescriptionStyle>
       <ContentTitle2Style>Faroe Islands</ContentTitle2Style>
@@ -77,6 +77,10 @@ const Content = () => {
 }
 
 const ContentContainer = styled.div`
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1608px;
   margin: 0;
   padding: 60px 5vw 10px 5vw;
   background: #e8e8e8;
