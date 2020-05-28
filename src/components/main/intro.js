@@ -6,14 +6,13 @@ const Intro = () => {
   return (
     <IntroContainer>
       <IntroDescriptionStyle>
-        Are you a young person, who either lives in or comes from the North
-        Atlantic, and has an idea that can help our region? Then we want to hear
-        from you!
+        A challenge for young persons living in or coming from the
+        North Atlantic, and that have ideas that can help our region.
       </IntroDescriptionStyle>
-      <ButtonStyle href="/signup">
+      <ButtonStyle href="/">
         SIGN UP
         <br />
-        BEFORE 28 MAY 23:59
+        DEADLINE HAS PASSED
       </ButtonStyle>
       <IntroTitleStyle>
         A 48 HOUR ONLINE CHALLENGE TO TACKLE COVID-19 CRISIS
@@ -21,11 +20,6 @@ const Intro = () => {
         29-31 MAY 2020
       </IntroTitleStyle>
       <NorthAtlantic />
-      <IntroTitleStyle>
-        YOU CAN PARTICIPATE AND
-        <br />
-        WIN 30,000 DKK
-      </IntroTitleStyle>
       <IntroDescriptionStyle>
         The Coronavirus pandemic has changed our lives dramatically in just two
         months. Businesses, communities and our way of living is not like it
@@ -36,10 +30,6 @@ const Intro = () => {
       <IntroDescriptionStyle>
         Organised by Nordic Atlantic Cooperation (NORA) and Highlands and
         Islands Enterprise (HIE).
-      </IntroDescriptionStyle>
-      <IntroDescriptionStyle>
-        Do you want to participate in this North Atlantic challenge? Sign up and
-        join the fun!
       </IntroDescriptionStyle>
     </IntroContainer>
   )

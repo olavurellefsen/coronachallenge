@@ -9,9 +9,6 @@ const BurgerMenu = () => (
     <a id="video" className="menu-item" href="/video">
       Intro Video
     </a>
-    <a id="signup" className="menu-item" href="/signup">
-      Sign up
-    </a>
     <a id="schedule" className="menu-item" href="/schedule">
       Schedule
     </a>
