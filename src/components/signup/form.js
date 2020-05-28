@@ -24,7 +24,6 @@ const Form = () => {
           event.target.themes.forEach(element => {
             themes = element.checked ? themes + element.value + ";" : themes
           })
-
           const user = {
             name: `${event.target.firstnames.value} ${event.target.lastname.value}`,
             ageGroup: event.target.age.value,
@@ -37,39 +36,44 @@ const Form = () => {
             requestId: `${process.env.GATSBY_X_REQUEST_ID}`,
             need_help: event.target.needhelp.value,
           }
-          fetch(`${process.env.GATSBY_X_REGISTER_URL}`, {
-            method: "POST",
-            body: JSON.stringify(user),
-            mode: "cors",
-          })
-            .then(response => response.json())
-            .then(responseData => {
-              if (responseData.variables.email)
-                alert("Your email is already registered")
-              else if (responseData.variables.user_id) {
-                const requestId = translator.fromUUID(
-                  responseData.variables.request_id
-                )
-                const userId = translator.fromUUID(
-                  responseData.variables.user_id
-                )
-                const confirmationUrl = `${process.env.GATSBY_X_CONFIRM_URL}/${requestId}/${userId}`
-                SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
-                  to: `${user.email}`,
-                  subject: `Corona Challenge confirmation link`,
-                  html: emailHtml(user.name, confirmationUrl),
-                })
-                SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
-                  to: `olavur@ellefsen.fo`,
-                  subject: `Corona Challenge signup`,
-                  html: JSON.stringify(user) + ` - URL: ${confirmationUrl}`,
-                })
-                navigate(`/registered`, {
-                  state: { requestId: `${process.env.GATSBY_X_REQUEST_ID}` },
-                })
-              }
+          if (event.target.country.value  || event.target.country_other.value) {
+            fetch(`${process.env.GATSBY_X_REGISTER_URL}`, {
+              method: "POST",
+              body: JSON.stringify(user),
+              mode: "cors",
             })
-            .catch(error => console.warn(error))
+              .then(response => response.json())
+              .then(responseData => {
+                if (responseData.variables.email)
+                  alert("Your email is already registered")
+                else if (responseData.variables.user_id) {
+                  const requestId = translator.fromUUID(
+                    responseData.variables.request_id
+                  )
+                  const userId = translator.fromUUID(
+                    responseData.variables.user_id
+                  )
+                  const confirmationUrl = `${process.env.GATSBY_X_CONFIRM_URL}/${requestId}/${userId}`
+                  SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
+                    to: `${user.email}`,
+                    subject: `Corona Challenge confirmation link`,
+                    html: emailHtml(user.name, confirmationUrl),
+                  })
+                  SendEmail(`${process.env.GATSBY_X_EMAIL_URL}`, {
+                    to: `olavur@ellefsen.fo`,
+                    subject: `Corona Challenge signup`,
+                    html: JSON.stringify(user) + ` - URL: ${confirmationUrl}`,
+                  })
+                  navigate(`/registered`, {
+                    state: { requestId: `${process.env.GATSBY_X_REQUEST_ID}` },
+                  })
+                }
+              })
+              .catch(error => console.warn(error))
+
+          } else {
+            alert("Please type something about your connection to the North Atlantic")
+          }
 
           event.preventDefault()
         }}
@@ -205,7 +209,6 @@ const Form = () => {
                 name="country"
                 id="other"
                 value=""
-                required
               />
               <CheckboxLabelStyle htmlFor="other">
                 OTHER, EXPLAIN YOUR LINKS TO THE NORTH ATLANTIC
