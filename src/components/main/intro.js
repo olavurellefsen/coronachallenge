@@ -6,14 +6,21 @@ const Intro = () => {
   return (
     <IntroContainer>
       <IntroDescriptionStyle>
-        A challenge for young persons living in or coming from the
-        North Atlantic, and that have ideas that can help our region.
+        We kick off with an inspirational talk by{" "}
+        <LinkStyle href="/speaker">
+          Heini Zachariassen, founder of Vivino
+        </LinkStyle>
+        , on Friday 29 May 9pm UK time.
       </IntroDescriptionStyle>
-      <ButtonStyle href="/">
-        SIGN UP
+      <IntroDescriptionStyle>
+        The talk will be live-streamed here.
+      </IntroDescriptionStyle>
+      <IntroDescriptionStyle>
+        The registration deadline has passed. Approved participants will receive
+        an invitation to our Slack channel Friday before noon.
         <br />
-        DEADLINE HAS PASSED
-      </ButtonStyle>
+        <br />
+      </IntroDescriptionStyle>
       <IntroTitleStyle>
         A 48 HOUR ONLINE CHALLENGE TO TACKLE COVID-19 CRISIS
         <br />
@@ -59,22 +66,8 @@ const IntroDescriptionStyle = styled.div`
   margin-top: 48px;
 `
 
-const ButtonStyle = styled.a`
-  display: block;
-  position: relative;
-  margin: 40px 0;
-  max-width: 350px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: white;
-  background: #006eb6;
-  font-size: 28px;
-  font-weight: 600;
-  text-decoration: none;
-  opacity: 1;
-  padding: 16px 20px;
-  text-transform: uppercase;
-  text-align: center;
+const LinkStyle = styled.a`
+  color: black;
 `
 
 export default Intro
