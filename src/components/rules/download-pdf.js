@@ -8,15 +8,22 @@ const Content = () => (
     <ContentTitleStyle>RULES AND CODE OF CONDUCT</ContentTitleStyle>
     <SectionHeaderStyle>
       Download the document
+      <br />
+      <br />
+      <a href={downloadFile} download>
+        <DownloadPdfImage />
+      </a>
+      <br />
+      <br />
     </SectionHeaderStyle>
-    <a href={downloadFile} download><DownloadPdfImage /></a>
-    <br />
-    <br />
   </ContentContainer>
 )
 
 const ContentContainer = styled.div`
   position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1608px;
   margin: 0;
   padding: 60px 5vw 10px 5vw;
   background: #e8e8e8;

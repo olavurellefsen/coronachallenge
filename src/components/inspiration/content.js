@@ -14,7 +14,7 @@ const Content = () => {
         {videolist.map((video, i) => (
           <VideoBox key={i}>
             {video.youtubeid && (
-                <YouTubeStyle
+              <YouTubeStyle
                 src={`https://www.youtube.com/embed/${video.youtubeid}`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -31,6 +31,10 @@ const Content = () => {
 }
 
 const ContentContainer = styled.div`
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1608px;
   margin: 0;
   padding: 60px 5vw 10px 5vw;
   background: #e8e8e8;
@@ -57,6 +61,7 @@ const VideoContainer = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 92vw;
+  max-width: 1420px;
 `
 
 const VideoBox = styled.div`
@@ -85,8 +90,10 @@ const CompetitionStyle = styled.div`
 
 const YouTubeStyle = styled.iframe`
   margin: 0 auto;
-  width: 90vw;
-  height: 50.6vw;
+  width: 88vw;
+  height: 49.47vw;
+  max-width: 1400px;
+  max-height: 787px;
 `
 
 export default Content

@@ -6,26 +6,27 @@ const Intro = () => {
   return (
     <IntroContainer>
       <IntroDescriptionStyle>
-        Are you a young person, who either lives in or comes from the North
-        Atlantic, and has an idea that can help our region? Then we want to hear
-        from you!
+        We kick off with an inspirational talk by{" "}
+        <LinkStyle href="/speaker">
+          Heini Zachariassen, founder of Vivino
+        </LinkStyle>
+        , on Friday 29 May 9pm UK time.
       </IntroDescriptionStyle>
-      <ButtonStyle href="/signup">
-        SIGN UP
+      <IntroDescriptionStyle>
+        The talk will be live-streamed here.
+      </IntroDescriptionStyle>
+      <IntroDescriptionStyle>
+        The registration deadline has passed. Approved participants will receive
+        an invitation to our Slack channel Friday before noon.
         <br />
-        BEFORE 28 MAY 23:59
-      </ButtonStyle>
+        <br />
+      </IntroDescriptionStyle>
       <IntroTitleStyle>
         A 48 HOUR ONLINE CHALLENGE TO TACKLE COVID-19 CRISIS
         <br />
         29-31 MAY 2020
       </IntroTitleStyle>
       <NorthAtlantic />
-      <IntroTitleStyle>
-        YOU CAN PARTICIPATE AND
-        <br />
-        WIN 30,000 DKK
-      </IntroTitleStyle>
       <IntroDescriptionStyle>
         The Coronavirus pandemic has changed our lives dramatically in just two
         months. Businesses, communities and our way of living is not like it
@@ -37,18 +38,16 @@ const Intro = () => {
         Organised by Nordic Atlantic Cooperation (NORA) and Highlands and
         Islands Enterprise (HIE).
       </IntroDescriptionStyle>
-      <IntroDescriptionStyle>
-        Do you want to participate in this North Atlantic challenge? Sign up and
-        join the fun!
-      </IntroDescriptionStyle>
     </IntroContainer>
   )
 }
 
 const IntroContainer = styled.div`
   position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   max-width: 1608px;
-  margin: 20px 5vw;
+  margin: 20px 0;
 `
 
 const IntroTitleStyle = styled.div`
@@ -67,22 +66,8 @@ const IntroDescriptionStyle = styled.div`
   margin-top: 48px;
 `
 
-const ButtonStyle = styled.a`
-  display: block;
-  position: relative;
-  margin: 40px 10px;
-  max-width: 400px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: white;
-  background: #006eb6;
-  font-size: 28px;
-  font-weight: 600;
-  text-decoration: none;
-  opacity: 1;
-  padding: 16px 20px;
-  text-transform: uppercase;
-  text-align: center;
+const LinkStyle = styled.a`
+  color: black;
 `
 
 export default Intro

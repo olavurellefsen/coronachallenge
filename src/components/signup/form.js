@@ -29,14 +29,15 @@ const Form = () => {
             ageGroup: event.target.age.value,
             email: event.target.email.value,
             country:
-              event.target.country.value + `!${event.target.country_other.value}`,
+              event.target.country.value +
+              `!${event.target.country_other.value}`,
             experiences:
               experiences + `!${event.target.skillsexperiences_other.value}`,
             themes: themes,
             requestId: `${process.env.GATSBY_X_REQUEST_ID}`,
             need_help: event.target.needhelp.value,
           }
-          if (event.target.country.value  || event.target.country_other.value) {
+          if (event.target.country.value || event.target.country_other.value) {
             fetch(`${process.env.GATSBY_X_REGISTER_URL}`, {
               method: "POST",
               body: JSON.stringify(user),
@@ -70,9 +71,10 @@ const Form = () => {
                 }
               })
               .catch(error => console.warn(error))
-
           } else {
-            alert("Please type something about your connection to the North Atlantic")
+            alert(
+              "Please type something about your connection to the North Atlantic"
+            )
           }
 
           event.preventDefault()
@@ -204,12 +206,7 @@ const Form = () => {
               </CheckboxLabelStyle>
               <br />
               <br />
-              <CheckboxStyle
-                type="radio"
-                name="country"
-                id="other"
-                value=""
-              />
+              <CheckboxStyle type="radio" name="country" id="other" value="" />
               <CheckboxLabelStyle htmlFor="other">
                 OTHER, EXPLAIN YOUR LINKS TO THE NORTH ATLANTIC
               </CheckboxLabelStyle>
@@ -370,6 +367,10 @@ const Form = () => {
 }
 
 const FormContainer = styled.div`
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1608px;
   display: flex;
   padding: 0 5vw;
   background: #e8e8e8;

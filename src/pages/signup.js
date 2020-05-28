@@ -1,9 +1,8 @@
 import React from "react"
+import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/signup/header"
-import Intro from "../components/signup/intro"
-import Form2 from "../components/signup/form"
+import Header from "../components/media/header"
 import AboutUs from "../components/footer/about-us"
 import Image from "../images/girl-smartphone-beach-dark-1200x630.jpg"
 
@@ -15,10 +14,16 @@ const Page = () => (
       pathname="/signup"
     />
     <Header />
-    <Intro />
-    <Form2 />
+    <DescriptionStyle>The registration deadline has passed.</DescriptionStyle>
     <AboutUs />
   </Layout>
 )
+
+const DescriptionStyle = styled.div`
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  margin: 40px 5vw;
+`
 
 export default Page
