@@ -6,16 +6,12 @@ const Content = () => {
   return (
     <ContentContainer>
       <ContentTitleStyle>SPEAKER</ContentTitleStyle>
-      <YouTubeStyle
-        src="https://www.youtube.com/watch?v=QPmZnbDU7wE"
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
       <DescriptionStyle>
-        The Corona Challenge kicked off on Friday 29 May 2020 20:00 UTC with an
-        inspirational talk from Heini Zachariassen, an entrepreneur from the
-        Faroe Islands.
+        The Corona Challenge kicked off on Friday 29 May 2020 20:00 UTC with an{" "}
+        <a href="https://www.youtube.com/watch?v=QPmZnbDU7wE">
+          inspirational talk
+        </a>{" "}
+        from Heini Zachariassen, an entrepreneur from the Faroe Islands.
       </DescriptionStyle>
       <Heini />
       <DescriptionStyle>
