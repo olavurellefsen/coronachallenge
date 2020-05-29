@@ -5,6 +5,7 @@ import HiepLogo from "./hiep-logo"
 import HieLogo from "./hie-logo"
 import DhcsLogo from "./dhcs-logo"
 import NoraLogo from "./nora-logo"
+import CivtechLogo from "./civtech-logo"
 import TokniLogo from "./tokni-logo"
 
 const AboutUs = () => (
@@ -59,6 +60,7 @@ const AboutUs = () => (
     <LinkStyle href="https://www.nora.fo"><NoraLogo /></LinkStyle>
     <HiepLogo />
     <DhcsLogo />
+    <CivtechLogo />
     <LinkStyle href="https://www.tokni.com"><TokniLogo /></LinkStyle>
   </AboutUsContainer>
 )
