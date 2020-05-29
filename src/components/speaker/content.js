@@ -7,8 +7,11 @@ const Content = () => {
     <ContentContainer>
       <ContentTitleStyle>SPEAKER</ContentTitleStyle>
       <DescriptionStyle>
-        The Corona Challenge will kick off on Friday 29 May 2020 20:00 UTC by
-        Heini Zachariassen, an entrepreneur from the Faroe Islands.
+        The Corona Challenge kicked off on Friday 29 May 2020 20:00 UTC with an{" "}
+        <a href="https://www.youtube.com/watch?v=QPmZnbDU7wE">
+          inspirational talk
+        </a>{" "}
+        from Heini Zachariassen, an entrepreneur from the Faroe Islands.
       </DescriptionStyle>
       <Heini />
       <DescriptionStyle>
