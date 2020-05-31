@@ -6,11 +6,15 @@ const Intro = () => {
   return (
     <IntroContainer>
       <IntroDescriptionStyle>
-        The winners are being announced on{" "}
-        <a href="https://www.youtube.com/channel/UCNBcUvkdI6AAW-lyZn_9_Dg">
-          our YouTube channel
-        </a>{" "}
-        at 17:00 UTC (Icelandic time)
+        The winners are being announced at the final webinar below.
+      </IntroDescriptionStyle>
+      <IntroDescriptionStyle>
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/B0R3wnOLpU0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </IntroDescriptionStyle>
       <IntroDescriptionStyle>
         Some of the entries can be found below{" "}
