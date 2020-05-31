@@ -6,21 +6,58 @@ const Intro = () => {
   return (
     <IntroContainer>
       <IntroDescriptionStyle>
-        We kicked off with an inspirational talk by{" "}
-        <LinkStyle href="/speaker">
-          Heini Zachariassen, founder of Vivino
-        </LinkStyle>
-        , on Friday 29 May 9pm UK time.
+        The winners are being announced on{" "}
+        <a href="https://www.youtube.com/channel/UCNBcUvkdI6AAW-lyZn_9_Dg">
+          our YouTube channel
+        </a>{" "}
+        at 17:00 UTC (Icelandic time)
       </IntroDescriptionStyle>
       <IntroDescriptionStyle>
-        The talk was live-streamed{" "}
-        <a href="https://www.youtube.com/watch?v=QPmZnbDU7wE">here</a>.
+        Some of the entries can be found below{" "}
       </IntroDescriptionStyle>
       <IntroDescriptionStyle>
-        The registration deadline has passed. Approved participants will receive
-        an invitation to our Slack channel Friday before noon.
-        <br />
-        <br />
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/L3VfTupzZK0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/pE5UUkcxNaY"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/Id8rdA5pZKE"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/10_Pnu4A1Is"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/VkTgw5HwX_c"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/eGT_MrhwMj8"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/0quq1x23Sso"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </IntroDescriptionStyle>
       <IntroTitleStyle>
         A 48 HOUR ONLINE CHALLENGE TO TACKLE COVID-19 CRISIS
@@ -67,8 +104,12 @@ const IntroDescriptionStyle = styled.div`
   margin-top: 48px;
 `
 
-const LinkStyle = styled.a`
-  color: black;
+const YouTubeStyle = styled.iframe`
+  margin: 20px;
+  width: 45vw;
+  height: 25.3vw;
+  max-width: 1400px;
+  max-height: 787px;
 `
 
 export default Intro
