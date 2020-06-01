@@ -13,7 +13,7 @@ const Themes = () => {
     <ThemesContainer>
       <ThemesTitleStyle>THREE THEMES</ThemesTitleStyle>
       <ThemesDescriptionStyle>
-        The hackathon will focus on three main themes
+        The hackathon focuses on three main themes
       </ThemesDescriptionStyle>
       <ThemesList>
         <ThemeBox>
