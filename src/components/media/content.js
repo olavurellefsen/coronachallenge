@@ -6,7 +6,7 @@ const Content = () => {
     <ContentContainer>
       <ContentTitleStyle>MEDIA COVERAGE</ContentTitleStyle>
       <DescriptionStyle>
-        Below is a selection of media articles about the event.
+        Below is a selection of media articles and blog posts about the event.
       </DescriptionStyle>
       <ContentTitle2Style>Scotland</ContentTitle2Style>
       <DescriptionStyle>
@@ -56,7 +56,12 @@ const Content = () => {
         </LinkStyle>
       </DescriptionStyle>
       <ContentTitle2Style>Greenland</ContentTitle2Style>
-      <DescriptionStyle>(Coming up)</DescriptionStyle>
+      <DescriptionStyle>
+        JJ Lennert-Sandgreen:{" "}
+        <LinkStyle href="https://medium.com/@JJsandgreen/mentoring-a-team-that-won-the-north-atlantic-hackathon-2020-1369dbfe019c">
+          Mentoring a team that won the North Atlantic hackathon 2020
+        </LinkStyle>
+      </DescriptionStyle>
       <ContentTitle2Style>Iceland</ContentTitle2Style>
       <DescriptionStyle>
         Byggðastofnun:{" "}
