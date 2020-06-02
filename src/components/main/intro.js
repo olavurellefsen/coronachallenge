@@ -24,33 +24,33 @@ const Intro = () => {
         <br />
       </DescriptionStyle>
       <TitleStyle>Opening webinar - Live streaming 29 May 2020</TitleStyle>
-        <DescriptionStyle>
-          The opening webinar of the North Atlantic Corona Challenge 2020 with
-          keynote speaker Heini Zachariassen. Hosts: Jákup Justinussen and
-          Øystein Andresen.
-        </DescriptionStyle>
-        <DescriptionStyle>
-          <YouTubeStyle
-            src="https://www.youtube.com/embed/QPmZnbDU7wE?start=1192"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </DescriptionStyle>
-        <TitleStyle>Closing webinar - Live streaming 31 May 2020</TitleStyle>
-        <DescriptionStyle>
-          The closing webinar of the North Atlantic Corona Challenge 2020 with
-          the four winning projects presented by judge chair Christian Wennecke.
-          Hosts: Jákup Justinussen and Øystein Andresen.
-        </DescriptionStyle>
-        <DescriptionStyle>
-          <YouTubeStyle
-            src="https://www.youtube.com/embed/B0R3wnOLpU0?start=504"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </DescriptionStyle>
+      <DescriptionStyle>
+        The opening webinar of the North Atlantic Corona Challenge 2020 with
+        keynote speaker Heini Zachariassen. Hosts: Jákup Justinussen and Øystein
+        Andresen.
+      </DescriptionStyle>
+      <DescriptionStyle>
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/QPmZnbDU7wE?start=1192"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </DescriptionStyle>
+      <TitleStyle>Closing webinar - Live streaming 31 May 2020</TitleStyle>
+      <DescriptionStyle>
+        The closing webinar of the North Atlantic Corona Challenge 2020 with the
+        four winning projects presented by judge chair Christian Wennecke.
+        Hosts: Jákup Justinussen and Øystein Andresen.
+      </DescriptionStyle>
+      <DescriptionStyle>
+        <YouTubeStyle
+          src="https://www.youtube.com/embed/B0R3wnOLpU0?start=504"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </DescriptionStyle>
       <TitleStyle>WINNERS - DKK 30,000</TitleStyle>
       <DescriptionStyle>
         The winners of the North Atlantic Corona Challenge 2020 were Shop with
@@ -93,13 +93,11 @@ const Intro = () => {
           allowFullScreen
         />
       </DescriptionStyle>
-      <TitleStyle>
-        HIGHLANDS AND ISLANDS ENTERPRISE SUPPORT
-      </TitleStyle>
+      <TitleStyle>HIGHLANDS AND ISLANDS ENTERPRISE SUPPORT</TitleStyle>
       <DescriptionStyle>
         The winners of the support package from Highlands and Islands Enterprise
-        were Tour'st - Nicolai Jensen, George O'Brien, Susie Morton, Alana
-        Elliot from Scotland and the Faroe Islands.
+        were Tour'st - Nicolai Jensen, George O'Brien, and Susie Morton from
+        Scotland and the Faroe Islands.
       </DescriptionStyle>
       <DescriptionStyle>
         <YouTubeStyle
