@@ -112,12 +112,6 @@ const Intro = () => {
       </DescriptionStyle>
       <DescriptionStyle>
         <YouTubeStyle
-          src="https://www.youtube.com/embed/L3VfTupzZK0"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-        <YouTubeStyle
           src="https://www.youtube.com/embed/pE5UUkcxNaY"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -131,12 +125,6 @@ const Intro = () => {
         />
         <YouTubeStyle
           src="https://www.youtube.com/embed/VkTgw5HwX_c"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-        <YouTubeStyle
-          src="https://www.youtube.com/embed/eGT_MrhwMj8"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
